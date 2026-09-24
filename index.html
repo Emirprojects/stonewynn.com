@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Stonewynn Consulting — real estate, corporate and project advisory in Dubai. Investment and development, operations, advisory and research, technology and innovation.">
+<meta property="og:title" content="Stonewynn Consulting">
+<meta property="og:description" content="Architects of Possibility. Real estate, corporate and project advisory, Dubai.">
+<meta property="og:image" content="assets/marina.jpg">
+<link rel="icon" href="assets/favicon.png" type="image/png">
+<title>Stonewynn Consulting | Real estate, corporate & project advisory, Dubai</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Archivo:wght@300;400;500;600&display=swap">
+<style>
+:root{
+  --navy:#16223A; --navy-2:#1C2A45; --navy-deep:#0F1829;
+  --cream:#F7F3EC; --cream-2:#EFE9DE; --paper:#FBF9F5;
+  --gold:#9A7D52; --gold-2:#B8996A; --gold-3:#D6BE92; --gold-soft:rgba(154,125,82,.16);
+  --ink:#1B2233; --stone:#6E6F74;
+  --line:#E2DACB; --line-navy:rgba(247,243,236,.14);
+  --display:'Playfair Display',Georgia,'Times New Roman',serif;
+  --sans:'Archivo','Helvetica Neue',Arial,sans-serif;
+  --max:1280px; --gutter:clamp(20px,5vw,72px);
+  --ease:cubic-bezier(.2,.7,.2,1);
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;padding:0}
+h1,h2,h3,h4{margin:0;font-family:var(--display);font-weight:500;line-height:1.1;text-wrap:balance}
+p{margin:0}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.wrap{max-width:var(--max);margin:0 auto;padding-inline:var(--gutter)}
+.eyebrow{font-size:11.5px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);display:flex;align-items:center;gap:14px}
+.eyebrow::before{content:"";width:28px;height:1px;background:currentColor}
+.dark .eyebrow{color:var(--gold-2)}
+.lede{font-size:clamp(17px,1.4vw,20px);line-height:1.55;max-width:58ch}
+.muted{color:var(--stone)}
+.dark{background:var(--navy);color:var(--cream)}
+.dark .muted{color:rgba(247,243,236,.7)}
+section{padding-block:clamp(72px,9vw,130px);position:relative}
+.sec-head{display:grid;gap:18px;max-width:780px;margin-bottom:clamp(36px,5vw,64px)}
+.sec-head h2,.h2{font-size:clamp(34px,4.4vw,58px);letter-spacing:-.01em}
+.num{font-family:var(--display);font-variant-numeric:tabular-nums;color:var(--gold);font-size:15px;letter-spacing:.02em}
+.btn{display:inline-flex;align-items:center;gap:12px;font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;padding:16px 28px;border:1px solid var(--navy);color:var(--navy);position:relative;overflow:hidden;transition:color .4s;isolation:isolate}
+.btn::before{content:"";position:absolute;inset:0;background:var(--navy);transform:translateY(101%);transition:transform .45s var(--ease);z-index:-1}
+.btn:hover::before{transform:none}
+.btn:hover{color:var(--cream)}
+.btn svg{width:16px;height:16px;transition:transform .3s}
+.btn:hover svg{transform:translateX(5px)}
+.btn.gold{border-color:var(--gold);background:var(--gold);color:var(--cream)}
+.btn.gold::before{background:var(--navy)}
+.btn.light{border-color:rgba(247,243,236,.55);color:var(--cream)}
+.btn.light::before{background:var(--cream)}
+.btn.light:hover{color:var(--navy)}
+.rv{opacity:.001;transform:translateY(22px);transition:opacity 1s var(--ease),transform 1s var(--ease)}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.12s}.rv.d2{transition-delay:.24s}.rv.d3{transition-delay:.36s}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none}}
+
+/* NAV */
+.nav{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;z-index:50;color:var(--cream);transition:background .4s,box-shadow .4s,color .4s}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:80px}
+.nav.scrolled{background:rgba(247,243,236,.92);color:var(--navy);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);box-shadow:0 1px 0 var(--line)}
+.nav.scrolled.on-dark{background:rgba(22,34,58,.9);color:var(--cream);box-shadow:0 1px 0 var(--line-navy)}
+.brand img{height:44px;width:auto}
+.brand .navy{display:none}.brand .gold{display:block}
+.nav.scrolled:not(.on-dark) .brand .navy{display:block}.nav.scrolled:not(.on-dark) .brand .gold{display:none}
+.nav-links{display:flex;gap:34px}
+.nav-links a{font-size:12.5px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;opacity:.85;position:relative;padding-block:6px}
+.nav-links a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--gold-2);transform:scaleX(0);transform-origin:left;transition:transform .35s var(--ease)}
+.nav-links a:hover::after,.nav-links a.active::after{transform:scaleX(1)}
+.nav .btn{padding:11px 20px;border-color:currentColor;color:inherit}
+.nav .btn::before{background:var(--gold)}
+.nav .btn:hover{color:var(--cream);border-color:var(--gold)}
+.burger{display:none;width:44px;height:44px;align-items:center;justify-content:center}
+.burger span{display:block;width:24px;height:1.5px;background:currentColor;position:relative}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0;width:24px;height:1.5px;background:currentColor}
+.burger span::before{top:-7px}.burger span::after{top:7px}
+.menu{position:fixed;inset:0;z-index:49;background:var(--navy);color:var(--cream);display:none;flex-direction:column;justify-content:center;padding:var(--gutter);gap:4px}
+.menu.open{display:flex}
+.menu a{font-family:var(--display);font-size:32px;padding-block:10px;border-bottom:1px solid var(--line-navy)}
+.menu .small{font-family:var(--sans);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-2);border:0;margin-top:26px}
+@media(max-width:960px){.nav-links,.nav .btn{display:none}.burger{display:flex}}
+
+/* HERO */
+.hero{min-height:min(92vh,900px);display:grid;align-items:end;padding:0;color:var(--cream);background:var(--navy-deep);overflow:hidden;isolation:isolate}
+.hero .slides{position:absolute;inset:0;z-index:-2}
+.hero .slides img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.08);transition:opacity 1.6s ease}
+.hero .slides img.on{opacity:1;animation:kb 9s linear forwards}
+@keyframes kb{from{transform:scale(1.08) translate(1%,1%)}to{transform:scale(1) translate(0,0)}}
+.hero .veil{position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(15,24,41,.45) 0%,rgba(15,24,41,.15) 40%,rgba(15,24,41,.85) 100%),linear-gradient(90deg,rgba(15,24,41,.55),rgba(15,24,41,0) 60%)}
+.hero .grain{position:absolute;inset:0;z-index:-1;opacity:.35;background:radial-gradient(1200px 500px at 20% 90%,rgba(154,125,82,.22),transparent 60%)}
+.hero .wrap{width:100%;padding-top:140px;padding-bottom:clamp(40px,6vw,80px);display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr);gap:40px;align-items:end}
+.hero .eyebrow{color:var(--gold-3);opacity:0;animation:up 1s var(--ease) .3s forwards}
+.hero h1{font-size:clamp(52px,8vw,124px);line-height:.96;letter-spacing:-.02em;margin:22px 0 26px;color:var(--cream)}
+.hero h1 .w{display:inline-block;overflow:hidden;vertical-align:bottom;padding-bottom:.08em;margin-bottom:-.08em}
+.hero h1 .w span{display:inline-block;transform:translateY(110%);animation:rise 1.2s var(--ease) forwards}
+.hero h1 .w:nth-child(1) span{animation-delay:.45s}.hero h1 .w:nth-child(2) span{animation-delay:.55s}.hero h1 .w:nth-child(3) span{animation-delay:.7s}
+.hero h1 em{font-style:italic;font-weight:400;color:var(--gold-3)}
+@keyframes rise{to{transform:none}}
+@keyframes up{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.hero .lede{color:rgba(247,243,236,.85);max-width:48ch;opacity:0;animation:up 1s var(--ease) 1s forwards}
+.hero-cta{display:flex;gap:16px;flex-wrap:wrap;margin-top:34px;opacity:0;animation:up 1s var(--ease) 1.2s forwards}
+.hero-side{display:grid;gap:14px;justify-items:end;text-align:right;opacity:0;animation:up 1.2s var(--ease) 1.4s forwards}
+.hero-side .cap{font-family:var(--display);font-style:italic;font-size:18px;color:rgba(247,243,236,.8);max-width:26ch}
+.dots{display:flex;gap:8px}
+.dots button{width:34px;height:2px;background:rgba(247,243,236,.3);position:relative;overflow:hidden}
+.dots button::after{content:"";position:absolute;inset:0;background:var(--gold-3);transform:scaleX(0);transform-origin:left}
+.dots button.on::after{animation:bar 9s linear forwards}
+@keyframes bar{to{transform:none}}
+.scroll-cue{position:absolute;left:var(--gutter);bottom:26px;display:flex;align-items:center;gap:12px;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:rgba(247,243,236,.6);opacity:0;animation:up 1s var(--ease) 1.8s forwards}
+.scroll-cue i{display:block;width:1px;height:38px;background:rgba(247,243,236,.35);position:relative;overflow:hidden}
+.scroll-cue i::after{content:"";position:absolute;left:0;top:0;width:100%;height:50%;background:var(--gold-3);animation:drop 1.8s ease-in-out infinite}
+@keyframes drop{from{transform:translateY(-100%)}to{transform:translateY(200%)}}
+@media(max-width:960px){.hero .wrap{grid-template-columns:1fr}.hero-side{justify-items:start;text-align:left}.scroll-cue{display:none}.hero{min-height:0}}
+
+/* TICKER */
+.ticker{background:var(--navy);color:rgba(247,243,236,.75);border-top:1px solid var(--line-navy);border-bottom:1px solid var(--line-navy);padding-block:16px;overflow:hidden;white-space:nowrap}
+.ticker .track{display:inline-flex;gap:0;animation:mq 40s linear infinite}
+.ticker span{font-size:12px;letter-spacing:.2em;text-transform:uppercase;padding:0 32px;display:inline-flex;align-items:center;gap:32px}
+.ticker span::after{content:"";width:5px;height:5px;background:var(--gold-2);transform:rotate(45deg)}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* ABOUT */
+.about{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,6vw,96px);align-items:center}
+.about h2{font-size:clamp(36px,4.6vw,60px);margin:18px 0 24px}
+.about .art{position:relative}
+.about .art .frame{overflow:hidden;clip-path:inset(0 0 0 100%);transition:clip-path 1.4s var(--ease)}
+.about .art.in .frame{clip-path:inset(0)}
+.about .art img{aspect-ratio:4/3;width:100%;object-fit:cover;transform:scale(1.15);transition:transform 1.6s var(--ease)}
+.about .art.in img{transform:none}
+.about .art .tag{position:absolute;left:-1px;bottom:32px;background:var(--navy);color:var(--cream);padding:18px 22px;max-width:280px;font-family:var(--display);font-style:italic;font-size:17px;line-height:1.4;border-left:2px solid var(--gold)}
+.serve{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:clamp(48px,6vw,80px)}
+.serve div{background:var(--paper);padding:22px 20px;display:grid;gap:6px;transition:background .35s;position:relative;overflow:hidden}
+.serve div::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:100%;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .5s var(--ease)}
+.serve div:hover{background:var(--cream-2)}
+.serve div:hover::after{transform:none}
+.serve b{font-family:var(--display);font-weight:500;font-size:19px;color:var(--navy)}
+.serve small{font-size:13px;color:var(--stone)}
+@media(max-width:960px){.about{grid-template-columns:1fr}.serve{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.serve{grid-template-columns:1fr}}
+
+/* CAPABILITIES accordion gallery */
+.acc{display:flex;gap:6px;height:min(640px,78vh);min-height:480px}
+.acc .card{flex:1;position:relative;overflow:hidden;cursor:pointer;transition:flex .8s var(--ease);color:var(--cream);isolation:isolate;text-align:left;min-width:0}
+.acc .card.open{flex:3.2}
+.acc .card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform 1.4s var(--ease);transform:scale(1.05)}
+.acc .card.open img{transform:none}
+.acc .card::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(15,24,41,.2),rgba(15,24,41,.9));transition:opacity .6s}
+.acc .card:not(.open)::before{background:linear-gradient(180deg,rgba(22,34,58,.55),rgba(22,34,58,.92))}
+.acc .inner{position:absolute;inset:0;padding:clamp(20px,3vw,40px);display:flex;flex-direction:column;justify-content:flex-end;gap:14px}
+.acc .idx{font-family:var(--display);font-size:14px;color:var(--gold-3);letter-spacing:.1em}
+.acc h3{font-size:clamp(20px,2.4vw,34px);white-space:nowrap}
+.acc .card:not(.open) h3{writing-mode:vertical-rl;transform:rotate(180deg);font-size:clamp(18px,1.8vw,24px);margin-bottom:10px;align-self:flex-start}
+.acc .card:not(.open) .inner{justify-content:flex-end}
+.acc .body{display:grid;gap:12px;max-width:520px;opacity:0;transform:translateY(12px);transition:opacity .6s .25s,transform .6s .25s var(--ease);height:0;overflow:hidden}
+.acc .card.open .body{opacity:1;transform:none;height:auto}
+.acc .body p{font-family:var(--display);font-style:italic;font-size:18px;color:var(--gold-3)}
+.acc .body ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:6px 24px;font-size:14.5px}
+.acc .body li{display:flex;gap:10px;align-items:baseline}
+.acc .body li::before{content:"";width:5px;height:5px;background:var(--gold-2);transform:rotate(45deg);flex:none;translate:0 -2px}
+@media(max-width:960px){.acc{flex-direction:column;height:auto;min-height:0}.acc .card{min-height:92px;flex:none}.acc .card.open{min-height:520px}.acc .card:not(.open) h3{writing-mode:horizontal-tb;transform:none}.acc .body ul{grid-template-columns:1fr}}
+
+/* SERVICES */
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px}
+.filters button{font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;padding:10px 16px;border:1px solid var(--line);color:var(--stone);transition:.3s}
+.filters button:hover{border-color:var(--gold);color:var(--navy)}
+.filters button[aria-pressed=true]{background:var(--navy);border-color:var(--navy);color:var(--cream)}
+.svc{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(28px,5vw,80px);align-items:start}
+.svc-list{display:grid;border-top:1px solid var(--line);position:sticky;top:100px}
+.svc-item{display:grid;grid-template-columns:38px 1fr 20px;gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid var(--line);text-align:left;font-family:var(--display);font-size:clamp(17px,1.4vw,20px);color:var(--stone);transition:color .25s,padding .3s,opacity .3s}
+.svc-item .num{font-size:14px}
+.svc-item .dot{width:7px;height:7px;background:var(--gold);transform:rotate(45deg) scale(0);transition:.3s;justify-self:end}
+.svc-item:hover,.svc-item[aria-selected=true]{color:var(--navy)}
+.svc-item[aria-selected=true]{padding-left:10px}
+.svc-item[aria-selected=true] .dot{transform:rotate(45deg) scale(1)}
+.svc-item.dim{opacity:.32}
+.svc-detail{background:var(--paper);border:1px solid var(--line);display:grid;grid-template-rows:auto 1fr;overflow:hidden}
+.svc-detail .pic{aspect-ratio:16/8;overflow:hidden;max-width:100%;background:var(--cream-2);position:relative}
+.svc-detail .pic img{width:100%;height:100%;object-fit:cover;transition:opacity .5s,transform 6s linear}
+.svc-detail .pic .cat{position:absolute;left:18px;top:18px;background:rgba(22,34,58,.85);color:var(--cream);font-size:11px;letter-spacing:.18em;text-transform:uppercase;padding:7px 12px}
+.svc-body{padding:clamp(24px,3vw,40px);display:grid;gap:20px;align-content:start;animation:panel .5s var(--ease) both}
+@keyframes panel{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.svc-body h3{font-size:clamp(28px,3vw,40px);color:var(--navy)}
+.svc-body .sub{font-family:var(--display);font-style:italic;font-size:20px;color:var(--gold)}
+.svc-body ol{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.svc-body ol li{display:grid;grid-template-columns:34px 1fr;gap:10px;padding:13px 0;border-bottom:1px solid var(--line);font-size:15.5px}
+.svc-body .out{font-family:var(--display);font-style:italic;color:var(--gold);font-size:17px;padding-top:6px}
+.svc-nav{display:flex;justify-content:space-between;align-items:center;padding-top:10px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--stone)}
+.svc-nav button{color:var(--navy);display:inline-flex;gap:8px}
+.svc-nav button:hover{color:var(--gold)}
+.svc-mobile{display:none}
+@media(max-width:960px){.svc{grid-template-columns:1fr}.svc-list{position:static;display:none}.svc-mobile{display:block;width:100%;padding:14px 16px;font:500 16px var(--sans);color:var(--navy);background:var(--paper);border:1px solid var(--line);margin-bottom:18px}}
+
+/* TRANSACTIONS */
+.tx{color:var(--cream);background:var(--navy-deep);overflow:hidden}
+.tx .bg{position:absolute;inset:0;background:url(assets/holo.jpg) center/cover no-repeat;opacity:.5;transform:scale(1.1)}
+.tx .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(15,24,41,.96) 25%,rgba(15,24,41,.55) 70%,rgba(15,24,41,.8))}
+.tx .wrap{position:relative}
+.stages{display:grid;grid-template-columns:repeat(4,1fr);margin-top:20px;position:relative}
+.stages::before{content:"";position:absolute;left:0;top:0;height:1px;width:100%;background:var(--line-navy)}
+.stages::after{content:"";position:absolute;left:0;top:0;height:1px;width:0;background:var(--gold-2);transition:width 2.2s var(--ease)}
+.stages.seen::after{width:100%}
+.stage{padding:30px 28px 0 0;position:relative}
+.stage+.stage{padding-left:28px}
+.stage .num{color:var(--gold-2);display:block;margin-bottom:14px}
+.stage h3{font-size:23px;margin-bottom:10px}
+.stage p{font-size:15px;color:rgba(247,243,236,.72)}
+.stage .pin{position:absolute;top:-4px;left:0;width:9px;height:9px;background:var(--navy-deep);border:1px solid var(--gold-2);transform:rotate(45deg) scale(0);transition:transform .5s var(--ease)}
+.stage+.stage .pin{left:28px}
+.stages.seen .stage:nth-child(1) .pin{transform:rotate(45deg);transition-delay:.1s}
+.stages.seen .stage:nth-child(2) .pin{transform:rotate(45deg);transition-delay:.6s}
+.stages.seen .stage:nth-child(3) .pin{transform:rotate(45deg);transition-delay:1.1s}
+.stages.seen .stage:nth-child(4) .pin{transform:rotate(45deg);transition-delay:1.6s}
+@media(max-width:960px){.stages{grid-template-columns:1fr 1fr;gap:26px 0}.stage:nth-child(3){padding-left:0}.stage:nth-child(3) .pin{left:0}}
+@media(max-width:520px){.stages{grid-template-columns:1fr}.stage+.stage{padding-left:0}.stage+.stage .pin{left:0}}
+
+/* DIFFERENCE */
+.diff{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(32px,6vw,90px);align-items:center}
+.diff .art{position:relative;overflow:hidden}
+.diff .art img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:60% 50%;transform:scale(1.02);transition:transform 1.2s var(--ease)}
+.diff .art:hover img{transform:scale(1.06)}
+.diff-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid var(--line);margin-top:34px}
+.diff-grid div{padding:22px 24px 24px 0;border-bottom:1px solid var(--line);position:relative}
+.diff-grid div:nth-child(even){padding-left:24px;border-left:1px solid var(--line)}
+.diff-grid h3{font-size:21px;margin-bottom:6px;color:var(--navy);display:flex;align-items:center;gap:10px}
+.diff-grid h3::before{content:"";width:6px;height:6px;background:var(--gold);transform:rotate(45deg);transition:transform .5s var(--ease)}
+.diff-grid div:hover h3::before{transform:rotate(225deg)}
+.diff-grid p{font-size:14.5px;color:var(--stone)}
+@media(max-width:960px){.diff{grid-template-columns:1fr}.diff .art img{aspect-ratio:16/10}}
+@media(max-width:520px){.diff-grid{grid-template-columns:1fr}.diff-grid div:nth-child(even){padding-left:0;border-left:0}}
+
+/* PROCESS */
+.proc{background:var(--paper);border-top:1px solid var(--line)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:10px;position:relative}
+.steps::before{content:"";position:absolute;left:0;right:0;top:11px;height:1px;background:var(--line)}
+.steps .prog{position:absolute;left:0;top:11px;height:1px;background:var(--gold);width:0;transition:width .2s linear}
+.step{padding-right:28px;position:relative}
+.step+.step{padding-left:28px}
+.step .mark{width:23px;height:23px;border-radius:50%;border:1px solid var(--gold);background:var(--paper);position:relative;margin-bottom:22px}
+.step .mark::after{content:"";position:absolute;inset:6px;border-radius:50%;background:var(--gold);transform:scale(0);transition:transform .4s var(--ease)}
+.step.lit .mark::after{transform:none}
+.step .num{display:block;margin-bottom:10px}
+.step h3{font-size:24px;margin-bottom:10px;color:var(--navy)}
+.step p{font-size:15px;color:var(--stone)}
+@media(max-width:960px){.steps{grid-template-columns:1fr 1fr;gap:36px 0}.steps::before,.steps .prog{display:none}.step:nth-child(3){padding-left:0}}
+@media(max-width:520px){.steps{grid-template-columns:1fr}.step+.step{padding-left:0}}
+
+/* CONTACT */
+.contact{color:var(--cream);background:var(--navy-deep);overflow:hidden}
+.contact .bg{position:absolute;inset:0;background:url(assets/desk.jpg) center/cover no-repeat;opacity:.55}
+.contact .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(15,24,41,.95) 35%,rgba(15,24,41,.7))}
+.contact .wrap{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,6vw,90px);align-items:start}
+.contact h2{font-size:clamp(40px,5.4vw,72px);letter-spacing:-.015em;margin-top:18px}
+.details{display:grid;gap:24px;margin-top:40px}
+.details .k{font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-2);font-weight:600;display:block;margin-bottom:4px}
+.details .v{font-family:var(--display);font-size:22px;display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.copy{font-family:var(--sans);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:rgba(247,243,236,.6);border:1px solid var(--line-navy);padding:6px 10px;transition:.3s}
+.copy:hover{color:var(--cream);border-color:var(--gold-2)}
+.form{background:rgba(15,24,41,.7);border:1px solid var(--line-navy);padding:clamp(22px,3vw,36px);display:grid;gap:18px;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.form .row2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.field{display:grid;gap:8px}
+.field label{font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:rgba(247,243,236,.7);font-weight:600}
+.field input,.field select,.field textarea{width:100%;background:transparent;border:0;border-bottom:1px solid rgba(247,243,236,.3);color:var(--cream);font:400 16px var(--sans);padding:10px 0;border-radius:0;transition:border-color .3s}
+.field select{color-scheme:dark}.field select option{color:var(--ink)}
+.field textarea{min-height:110px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{outline:0;border-bottom-color:var(--gold-2)}
+.form .note{font-size:13px;color:rgba(247,243,236,.55)}
+.form .ok{display:none;padding:18px;border:1px solid var(--gold-2);font-family:var(--display);font-size:20px}
+.form.sent .ok{display:block}.form.sent .row2,.form.sent .field,.form.sent .btn,.form.sent .note{display:none}
+@media(max-width:960px){.contact .wrap{grid-template-columns:1fr}.contact .bg{opacity:.3}.form .row2{grid-template-columns:1fr}}
+
+footer{background:var(--navy-deep);color:rgba(247,243,236,.7);border-top:1px solid var(--line-navy);padding-block:36px;font-size:13px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+footer img{height:38px;width:auto}
+footer nav{display:flex;gap:22px;flex-wrap:wrap;letter-spacing:.1em;text-transform:uppercase;font-size:11.5px}
+footer nav a:hover{color:var(--cream)}
+</style>
+</head>
+<body>
+
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Stonewynn Consulting home">
+      <img class="navy" src="assets/logo_navy.png" alt="Stonewynn Consulting">
+      <img class="gold" src="assets/logo_gold.png" alt="">
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#about">About</a><a href="#capabilities">Capabilities</a><a href="#services">Services</a><a href="#transactions">Transactions</a><a href="#approach">Approach</a>
+    </nav>
+    <a class="btn" href="#contact">Start a conversation <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+<div class="menu" id="menu">
+  <a href="#about">About</a><a href="#capabilities">Capabilities</a><a href="#services">Specialist services</a><a href="#transactions">Transactions</a><a href="#approach">How we work</a><a href="#contact">Contact</a>
+  <a class="small" href="#contact">info@stonewynn.com · +971 4 250 6845</a>
+</div>
+
+<main id="top">
+
+<section class="hero" id="hero">
+  <div class="slides" aria-hidden="true">
+    <img src="assets/marina.jpg" alt="" class="on">
+    <img src="assets/boardroom.jpg" alt="">
+    <img src="assets/holo.jpg" alt="">
+  </div>
+  <div class="veil"></div><div class="grain"></div>
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Real estate, corporate &amp; project advisory · Dubai</p>
+      <h1><span class="w"><span>Architects</span></span> <span class="w"><span>of</span></span> <span class="w"><span><em>Possibility</em></span></span></h1>
+      <p class="lede">Stonewynn Consulting advises investors, business owners and developers on the decisions that shape the future of their assets and businesses.</p>
+      <div class="hero-cta">
+        <a class="btn gold" href="#services">Explore our services <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+        <a class="btn light" href="#contact">Start a conversation</a>
+      </div>
+    </div>
+    <div class="hero-side">
+      <p class="cap" id="heroCap">Waterfront and mixed-use development strategy</p>
+      <div class="dots" id="dots"><button class="on" aria-label="Slide 1"></button><button aria-label="Slide 2"></button><button aria-label="Slide 3"></button></div>
+    </div>
+  </div>
+  <div class="scroll-cue"><i></i>Scroll</div>
+</section>
+
+<div class="ticker" aria-hidden="true"><div class="track" id="tick">
+  <span>Investment &amp; development</span><span>Operations &amp; management</span><span>Advisory &amp; research</span><span>Technology &amp; innovation</span><span>Acquisitions &amp; partnerships</span><span>Feasibility &amp; valuation</span><span>Project delivery</span>
+  <span>Investment &amp; development</span><span>Operations &amp; management</span><span>Advisory &amp; research</span><span>Technology &amp; innovation</span><span>Acquisitions &amp; partnerships</span><span>Feasibility &amp; valuation</span><span>Project delivery</span>
+</div></div>
+
+<section id="about">
+  <div class="wrap">
+    <div class="about">
+      <div class="rv">
+        <p class="eyebrow">Who we are</p>
+        <h2>A partner in your ambition</h2>
+        <p class="lede">We support investors, business owners and developers in making decisions that shape the future of their assets and businesses.</p>
+        <p class="muted" style="margin-top:18px;max-width:58ch">Our services span the real estate lifecycle and extend to corporate strategy, business transactions and project delivery. We connect commercial analysis with clear plans and hands-on coordination, so a decision made in the boardroom is carried through to the site.</p>
+      </div>
+      <div class="art rv-clip" id="aboutArt">
+        <div class="frame"><img src="assets/boardroom.jpg" alt="Boardroom with a city model and skyline view"></div>
+        <div class="tag">Decisions are made at the table. We make sure they hold up on the ground.</div>
+      </div>
+    </div>
+    <p class="eyebrow rv" style="margin-top:clamp(48px,6vw,80px)">Who we serve</p>
+    <div class="serve rv d1" style="margin-top:22px">
+      <div><b>Private capital</b><small>Ultra-high-net-worth individuals and family offices</small></div>
+      <div><b>Institutional investors</b><small>Funds, venture capital and asset managers</small></div>
+      <div><b>Corporates &amp; developers</b><small>Business owners, developers and real estate holders</small></div>
+      <div><b>Public sector partners</b><small>Semi-government entities and public–private partnerships</small></div>
+    </div>
+  </div>
+</section>
+
+<section id="capabilities" class="dark" data-dark style="padding-top:clamp(56px,7vw,100px)">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="eyebrow">Our capabilities</p>
+      <h2>Four foundations of our expertise</h2>
+      <p class="muted">Select a foundation to open it.</p>
+    </div>
+    <div class="acc rv" id="acc">
+      <button class="card open" aria-expanded="true">
+        <img src="assets/marina.jpg" alt="">
+        <div class="inner"><span class="idx">01</span><h3>Investment &amp; Development</h3>
+          <div class="body"><p>Where capital meets the right opportunity.</p>
+            <ul><li>Real estate development strategy</li><li>Strategic partnerships &amp; joint ventures</li><li>Investment advisory for high-stakes decisions</li><li>Acquisition support &amp; asset optimisation</li><li>Project feasibility analysis</li><li>Visionary consulting for future-ready developments</li></ul></div></div>
+      </button>
+      <button class="card" aria-expanded="false">
+        <img src="assets/studio.jpg" alt="">
+        <div class="inner"><span class="idx">02</span><h3>Operations &amp; Management</h3>
+          <div class="body"><p>Assets that perform, year after year.</p>
+            <ul><li>Property &amp; asset management</li><li>Risk management &amp; compliance</li><li>Maintenance &amp; lifecycle planning</li><li>Financial oversight &amp; forecasting</li><li>Operational efficiency &amp; cost optimisation</li><li>Sustainability integration</li></ul></div></div>
+      </button>
+      <button class="card" aria-expanded="false">
+        <img src="assets/control.jpg" alt="">
+        <div class="inner"><span class="idx">03</span><h3>Advisory &amp; Research</h3>
+          <div class="body"><p>Evidence before commitment.</p>
+            <ul><li>Market analysis &amp; feasibility studies</li><li>Property valuation &amp; appraisal</li><li>Sales &amp; leasing advisory</li><li>Data-driven insights &amp; custom reporting</li><li>Regulatory compliance support</li><li>Opportunity identification across markets</li></ul></div></div>
+      </button>
+      <button class="card" aria-expanded="false">
+        <img src="assets/holo.jpg" alt="">
+        <div class="inner"><span class="idx">04</span><h3>Technology &amp; Innovation</h3>
+          <div class="body"><p>The tools that keep an asset ahead of its market.</p>
+            <ul><li>PropTech consulting</li><li>Digital transformation initiatives</li><li>Smart building &amp; IoT solutions</li><li>AI-driven analytics &amp; forecasting</li><li>Blockchain-enabled transactions</li><li>VR / AR visualisation &amp; cloud platforms</li></ul></div></div>
+      </button>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="eyebrow">Specialist services</p>
+      <h2>Corporate and project services</h2>
+      <p class="muted">Thirteen defined services, each with a clear scope and a clear deliverable. Filter by need, then choose one to read what it involves.</p>
+    </div>
+    <div class="filters rv" id="filters" role="group" aria-label="Filter services">
+      <button aria-pressed="true" data-f="all">All services</button>
+      <button aria-pressed="false" data-f="Strategy &amp; corporate">Strategy &amp; corporate</button>
+      <button aria-pressed="false" data-f="Project delivery">Project delivery</button>
+      <button aria-pressed="false" data-f="Research &amp; information">Research &amp; information</button>
+      <button aria-pressed="false" data-f="Transactions &amp; value">Transactions &amp; value</button>
+    </div>
+    <div class="svc rv d1">
+      <div>
+        <select class="svc-mobile" id="svcSelect" aria-label="Choose a service"></select>
+        <div class="svc-list" id="svcList" role="tablist" aria-label="Services"></div>
+      </div>
+      <div class="svc-detail" id="svcDetail" role="tabpanel" aria-live="polite">
+        <div class="pic"><img id="svcImg" src="assets/boardroom.jpg" alt=""><span class="cat" id="svcCat"></span></div>
+        <div class="svc-body" id="svcBody"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="transactions" class="dark tx" data-dark>
+  <div class="bg" id="txBg" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="eyebrow">Business transactions</p>
+      <h2>Acquisitions &amp; strategic partnerships</h2>
+      <p class="lede">A coordinated advisory process for acquisitions and joint ventures, from first screening through to completion.</p>
+    </div>
+    <div class="stages rv" id="stages">
+      <div class="stage"><i class="pin"></i><span class="num">Stage 01</span><h3>Opportunity assessment</h3><p>Screen the commercial rationale and identify key information requirements.</p></div>
+      <div class="stage"><i class="pin"></i><span class="num">Stage 02</span><h3>Commercial preparation</h3><p>Develop feasibility and valuation inputs and assess partnership options.</p></div>
+      <div class="stage"><i class="pin"></i><span class="num">Stage 03</span><h3>Counterparty engagement</h3><p>Support investor, buyer and partner introductions and commercial discussions.</p></div>
+      <div class="stage"><i class="pin"></i><span class="num">Stage 04</span><h3>Transaction coordination</h3><p>Coordinate due diligence inputs and agreed actions through to completion.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="difference">
+  <div class="wrap diff">
+    <figure class="art rv" style="margin:0"><img src="assets/desk.jpg" alt="Executive desk with a globe and the Dubai skyline"></figure>
+    <div class="rv d1">
+      <p class="eyebrow">The Stonewynn difference</p>
+      <h2 class="h2" style="margin-top:18px">Precision. Discretion.<br>Long-term perspective.</h2>
+      <div class="diff-grid">
+        <div><h3>Precision</h3><p>Careful analysis and attention to the details that affect decisions.</p></div>
+        <div><h3>Sophistication</h3><p>Considered advice for complex assets and discerning clients.</p></div>
+        <div><h3>Discretion</h3><p>Confidentiality and trust throughout each engagement.</p></div>
+        <div><h3>Global perspective</h3><p>Local market understanding with an international perspective.</p></div>
+        <div><h3>Bespoke solutions</h3><p>Advice aligned with each client's specific objectives.</p></div>
+        <div><h3>Legacy creation</h3><p>A long-term view of performance and enduring asset value.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="approach" class="proc">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="eyebrow">Working with us</p>
+      <h2>Clarity at every stage</h2>
+      <p class="muted">Every engagement follows the same four movements, so you always know where the work stands.</p>
+    </div>
+    <div class="steps rv" id="steps">
+      <div class="prog" id="prog"></div>
+      <div class="step"><div class="mark"></div><span class="num">01</span><h3>Define the mandate</h3><p>Agree objectives, scope, deliverables and engagement responsibilities.</p></div>
+      <div class="step"><div class="mark"></div><span class="num">02</span><h3>Establish the evidence</h3><p>Review information and identify the analysis and specialist inputs required.</p></div>
+      <div class="step"><div class="mark"></div><span class="num">03</span><h3>Develop the recommendation</h3><p>Evaluate alternatives and present clear commercial recommendations.</p></div>
+      <div class="step"><div class="mark"></div><span class="num">04</span><h3>Support implementation</h3><p>Coordinate agreed actions, monitor progress and keep you informed.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="dark contact" data-dark>
+  <div class="bg" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="rv">
+      <p class="eyebrow">Let's discuss your next opportunity</p>
+      <h2>Your next chapter starts here</h2>
+      <p class="lede" style="margin-top:22px;max-width:44ch;color:rgba(247,243,236,.85)">Tell us about the asset, the business or the transaction. We reply personally, and everything you share stays between us.</p>
+      <div class="details">
+        <div><span class="k">Email</span><span class="v"><span>info@stonewynn.com</span><button class="copy" data-copy="info@stonewynn.com">Copy</button></span></div>
+        <div><span class="k">Telephone</span><span class="v"><span>+971 4 250 6845</span><button class="copy" data-copy="+971 4 250 6845">Copy</button></span></div>
+        <div><span class="k">Office</span><span class="v">PO Box 232505, Dubai, United Arab Emirates</span></div>
+        <div><span class="k">Web</span><span class="v"><a href="https://www.stonewynn.com">www.stonewynn.com</a></span></div>
+      </div>
+    </div>
+    <form class="form rv d1" id="form" novalidate>
+      <div class="row2">
+        <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" autocomplete="name" required></div>
+        <div class="field"><label for="f-org">Organisation</label><input id="f-org" name="org" autocomplete="organization"></div>
+      </div>
+      <div class="row2">
+        <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+        <div class="field"><label for="f-phone">Telephone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel"></div>
+      </div>
+      <div class="field"><label for="f-topic">What can we help with?</label>
+        <select id="f-topic" name="topic">
+          <option>Investment or development decision</option><option>Acquisition, sale or partnership</option><option>Feasibility or valuation</option><option>Project delivery or cost control</option><option>Corporate structuring or management</option><option>Something else</option>
+        </select>
+      </div>
+      <div class="field"><label for="f-msg">A few words about the opportunity</label><textarea id="f-msg" name="message"></textarea></div>
+      <button class="btn light" type="submit">Send enquiry <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12h15M13 6l6 6-6 6"/></svg></button>
+      <p class="note">Your enquiry is treated in confidence. We typically respond within one business day.</p>
+      <div class="ok" id="ok">Thank you. Your enquiry has been prepared for <span id="okname"></span>; we will be in touch shortly.</div>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <img src="assets/logo_gold.png" alt="Stonewynn Consulting">
+    <nav aria-label="Footer"><a href="#about">About</a><a href="#capabilities">Capabilities</a><a href="#services">Services</a><a href="#approach">Approach</a><a href="#contact">Contact</a></nav>
+    <span>© <span id="yr"></span> Stonewynn Consulting · Dubai, UAE</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* hero slideshow */
+  var slides=[].slice.call(document.querySelectorAll('.hero .slides img')),dots=[].slice.call(document.querySelectorAll('#dots button')),cap=document.getElementById('heroCap');
+  var caps=['Waterfront and mixed-use development strategy','Corporate strategy and business performance','Technology, analytics and future-ready assets'];
+  var cur=0,timer;
+  function go(i){cur=i%slides.length;slides.forEach(function(s,j){s.classList.toggle('on',j===cur)});dots.forEach(function(d,j){d.classList.remove('on');void d.offsetWidth;if(j===cur)d.classList.add('on')});cap.textContent=caps[cur];clearTimeout(timer);if(!reduce)timer=setTimeout(function(){go(cur+1)},9000)}
+  dots.forEach(function(d,i){d.addEventListener('click',function(){go(i)})});
+  if(!reduce)timer=setTimeout(function(){go(1)},9000);
+
+  /* capabilities accordion */
+  var cards=[].slice.call(document.querySelectorAll('#acc .card'));
+  function openCard(c){cards.forEach(function(x){x.classList.toggle('open',x===c);x.setAttribute('aria-expanded',x===c)})}
+  cards.forEach(function(c){c.addEventListener('click',function(){openCard(c)});c.addEventListener('mouseenter',function(){if(matchMedia('(hover:hover)').matches)openCard(c)})});
+
+  /* services */
+  var services=[
+    {t:"Bespoke Strategy",c:"Strategy & corporate",s:"Strategy shaped around your vision and priorities",img:"boardroom",items:["Strategic priorities and opportunity assessment","Bespoke growth and investment roadmaps","Implementation planning and progress reviews"],out:"A tailored strategy with clear actions and milestones."},
+    {t:"Management Consultancies",c:"Strategy & corporate",s:"Management structure and business performance",img:"control",items:["Business planning and operational performance","Organisation design, governance and operating models","Performance reviews and improvement programmes"],out:"Clear priorities and a structured path to improved business performance."},
+    {t:"Corporate Services Provider",c:"Strategy & corporate",s:"Support for business establishment and administration",img:"desk",items:["Company establishment and structuring coordination","Corporate documentation and administrative support","Coordination with relevant service providers and authorities"],out:"An organised foundation for establishing and administering businesses."},
+    {t:"Project Development Consultant",c:"Project delivery",s:"Project definition and development planning",img:"marina",items:["Development concepts and commercial positioning","Development strategy, phasing and partner requirements","Coordination of owner, consultant and operator inputs"],out:"A development strategy grounded in the project's commercial objectives."},
+    {t:"Project Management Services",c:"Project delivery",s:"Coordination throughout the project lifecycle",img:"studio",items:["Scope, programme and milestone planning","Consultant and contractor coordination","Progress reporting and delivery issue management"],out:"Defined responsibilities, delivery milestones and progress oversight."},
+    {t:"Feasibility Studies Consultancies",c:"Research & information",s:"Commercial assessment before commitment",img:"control",items:["Market demand and concept viability assessment","Revenue, cost and investment scenario modelling","Sensitivity analysis and feasibility reporting"],out:"A documented basis for assessing commercial viability and investment alternatives."},
+    {t:"Business Valuation Services",c:"Transactions & value",s:"Business value for strategic and transaction decisions",img:"desk",items:["Review of financial performance and value drivers","Assessment using relevant valuation approaches","Valuation reports to support acquisition, sale or restructuring"],out:"A reasoned view of business value and the factors that influence it."},
+    {t:"Cost Control & Risk Management",c:"Project delivery",s:"Budget discipline and commercial risk oversight",img:"studio",items:["Budget planning, cost monitoring and variance reviews","Risk identification, assessment and mitigation planning","Commercial reporting and change control support"],out:"Greater visibility over expenditure and material commercial risks."},
+    {t:"Sourcing & Procurement Consultant",c:"Project delivery",s:"Supplier selection and purchasing strategy",img:"studio",items:["Sourcing strategies and supplier identification","Tender coordination and commercial offer comparison","Procurement planning and supplier negotiation support"],out:"A considered basis for sourcing decisions and procurement planning."},
+    {t:"Commercial Information Services",c:"Research & information",s:"Business information for commercial decisions",img:"control",items:["Company, sector and competitor information","Commercial opportunity screening and market mapping","Research summaries and tailored information reports"],out:"Relevant business information to evaluate commercial opportunities."},
+    {t:"Marketing Research & Consultancies",c:"Research & information",s:"Research for market entry and positioning",img:"holo",items:["Customer demand and market segmentation research","Pricing, competitor and positioning analysis","Market entry and marketing strategy recommendations"],out:"Research that informs market entry, positioning and commercial strategy."},
+    {t:"Facilities Resources Planning",c:"Project delivery",s:"Resources aligned with operating requirements",img:"boardroom",items:["Facilities needs and resource requirement assessment","Staffing, space and service capacity planning","Operating readiness and lifecycle resource planning"],out:"Resource plans aligned with facilities needs and operating requirements."},
+    {t:"Business Brokerage",c:"Transactions & value",s:"Introductions and coordination for business sales",img:"desk",items:["Buyer and seller identification and introductions","Opportunity presentation and initial commercial discussions","Due diligence coordination and transaction follow-up"],out:"Structured coordination between buyers, sellers and their advisers."}
+  ];
+  var list=document.getElementById('svcList'),sel=document.getElementById('svcSelect'),body=document.getElementById('svcBody'),img=document.getElementById('svcImg'),catEl=document.getElementById('svcCat'),sv=0,filter='all';
+  function pad(n){return (n<10?'0':'')+n}
+  services.forEach(function(s,i){
+    var b=document.createElement('button');b.className='svc-item';b.setAttribute('role','tab');b.dataset.c=s.c;
+    b.innerHTML='<span class="num">'+pad(i+1)+'</span><span>'+s.t+'</span><span class="dot"></span>';
+    b.addEventListener('click',function(){show(i)});list.appendChild(b);
+    var o=document.createElement('option');o.value=i;o.textContent=pad(i+1)+'  '+s.t;sel.appendChild(o);
+  });
+  sel.addEventListener('change',function(){show(+sel.value)});
+  function visible(){return services.map(function(s,i){return i}).filter(function(i){return filter==='all'||services[i].c===filter})}
+  function show(i){
+    sv=i;var s=services[sv];
+    [].forEach.call(list.children,function(b,j){b.setAttribute('aria-selected',j===sv?'true':'false')});
+    sel.value=sv;
+    img.style.opacity=0;setTimeout(function(){img.src='assets/'+s.img+'.jpg';img.onload=function(){img.style.opacity=1}},160);
+    catEl.textContent=s.c;
+    body.style.animation='none';void body.offsetWidth;body.style.animation='';
+    var vis=visible(),pos=vis.indexOf(sv);
+    body.innerHTML='<p class="eyebrow">Specialist service '+pad(sv+1)+' of 13</p><h3>'+s.t+'</h3><p class="sub">'+s.s+'</p><ol>'+s.items.map(function(it,k){return '<li><span class="num">'+pad(k+1)+'</span><span>'+it+'</span></li>'}).join('')+'</ol><p class="out">'+s.out+'</p><div class="svc-nav"><button type="button" id="svcPrev">&larr; Previous</button><span>'+(pos+1)+' / '+vis.length+'</span><button type="button" id="svcNext">Next &rarr;</button></div>';
+    document.getElementById('svcPrev').onclick=function(){show(vis[(pos-1+vis.length)%vis.length])};
+    document.getElementById('svcNext').onclick=function(){show(vis[(pos+1)%vis.length])};
+  }
+  document.querySelectorAll('#filters button').forEach(function(b){b.addEventListener('click',function(){
+    filter=b.textContent.trim()==='All services'?'all':b.textContent.trim();
+    document.querySelectorAll('#filters button').forEach(function(x){x.setAttribute('aria-pressed',x===b)});
+    [].forEach.call(list.children,function(el){el.classList.toggle('dim',filter!=='all'&&el.dataset.c!==filter)});
+    [].forEach.call(sel.options,function(o){o.hidden=filter!=='all'&&services[o.value].c!==filter});
+    var vis=visible();if(vis.indexOf(sv)<0)show(vis[0]);else show(sv);
+  })});
+  show(0);
+
+  /* nav */
+  var nav=document.getElementById('nav'),darks=document.querySelectorAll('[data-dark], #hero'),links=document.querySelectorAll('.nav-links a');
+  var secs=[].map.call(links,function(a){return document.querySelector(a.getAttribute('href'))});
+  var stepsEl=document.getElementById('steps'),prog=document.getElementById('prog'),stepEls=[].slice.call(document.querySelectorAll('.step')),txBg=document.getElementById('txBg');
+  function onScroll(){
+    var y=window.scrollY;nav.classList.toggle('scrolled',y>40);
+    var probe=y+60,dark=false;
+    darks.forEach(function(d){var r=d.getBoundingClientRect();var top=r.top+y;if(probe>=top&&probe<top+r.height)dark=true});
+    nav.classList.toggle('on-dark',dark);
+    var act=-1;secs.forEach(function(s,i){if(s&&s.getBoundingClientRect().top<=160)act=i});
+    links.forEach(function(a,i){a.classList.toggle('active',i===act)});
+    // process progress line
+    var r=stepsEl.getBoundingClientRect();var p=Math.min(1,Math.max(0,(window.innerHeight*.75-r.top)/(r.height+120)));
+    prog.style.width=(p*100)+'%';stepEls.forEach(function(s,i){s.classList.toggle('lit',p>=(i+.5)/4)});
+    // parallax on transactions background
+    var tr=txBg.parentElement.getBoundingClientRect();if(tr.bottom>0&&tr.top<window.innerHeight&&!reduce){txBg.style.transform='scale(1.1) translateY('+((tr.top)/-14)+'px)'}
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});window.addEventListener('resize',onScroll);onScroll();
+
+  var burger=document.getElementById('burger'),menu=document.getElementById('menu');
+  burger.addEventListener('click',function(){var o=menu.classList.toggle('open');burger.setAttribute('aria-expanded',o);document.body.style.overflow=o?'hidden':''});
+  menu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){menu.classList.remove('open');document.body.style.overflow=''})});
+
+  /* reveals */
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
+  document.querySelectorAll('.rv, #aboutArt').forEach(function(el){io.observe(el)});
+  var st=document.getElementById('stages');new IntersectionObserver(function(es,o){if(es[0].isIntersecting){st.classList.add('seen');o.disconnect()}},{threshold:.3}).observe(st);
+
+  /* copy */
+  document.querySelectorAll('.copy').forEach(function(b){b.addEventListener('click',function(){
+    var v=b.getAttribute('data-copy');var done=function(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy'},1600)};
+    function sel2(){var r=document.createRange();r.selectNodeContents(b.previousElementSibling);var s=getSelection();s.removeAllRanges();s.addRange(r)}
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(v).then(done,sel2)}else sel2();
+  })});
+
+  /* form */
+  var form=document.getElementById('form');
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var name=document.getElementById('f-name'),email=document.getElementById('f-email');
+    var bad=[name,email].filter(function(f){return !f.value.trim()||(f.type==='email'&&!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(f.value))});
+    bad.forEach(function(f){f.style.borderBottomColor='#D98C6B'});if(bad.length){bad[0].focus();return}
+    document.getElementById('okname').textContent=name.value.trim();form.classList.add('sent');
+    var q='subject='+encodeURIComponent('Enquiry from '+name.value.trim())+'&body='+encodeURIComponent('Name: '+name.value+'\nOrganisation: '+document.getElementById('f-org').value+'\nEmail: '+email.value+'\nTelephone: '+document.getElementById('f-phone').value+'\nTopic: '+document.getElementById('f-topic').value+'\n\n'+document.getElementById('f-msg').value);
+    try{location.href='mailto:info@stonewynn.com?'+q}catch(err){}
+  });
+  document.getElementById('yr').textContent=new Date().getFullYear();
+})();
+</script>
+
+</body>
+</html>
