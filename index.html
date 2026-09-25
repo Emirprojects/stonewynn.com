@@ -275,6 +275,16 @@ section{padding-block:clamp(72px,9vw,130px);position:relative}
 .form.sent .ok{display:block}.form.sent .row2,.form.sent .field,.form.sent .btn,.form.sent .note{display:none}
 @media(max-width:960px){.contact .wrap{grid-template-columns:1fr}.contact .bg{opacity:.3}.form .row2{grid-template-columns:1fr}}
 
+/* NEWS STRIP */
+.newsrow{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.newsrow a{background:var(--cream);padding:24px 22px;display:grid;gap:10px;align-content:start;transition:background .3s}
+.newsrow a:hover{background:var(--cream-2)}
+.newsrow .k{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);font-weight:600;display:flex;justify-content:space-between}
+.newsrow .k time{color:var(--stone);font-weight:500;letter-spacing:.06em}
+.newsrow h3{font-size:20px;color:var(--navy)}
+.newsrow p{font-size:14px;color:var(--stone)}
+@media(max-width:900px){.newsrow{grid-template-columns:1fr}}
+
 footer{background:var(--navy-deep);color:rgba(247,243,236,.7);border-top:1px solid var(--line-navy);padding-block:36px;font-size:13px}
 footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
 footer img{height:38px;width:auto}
@@ -292,14 +302,14 @@ footer nav a:hover{color:var(--cream)}
       <img class="gold" src="assets/logo_gold.png" alt="">
     </a>
     <nav class="nav-links" aria-label="Primary">
-      <a href="#about">About</a><a href="#capabilities">Capabilities</a><a href="#services">Services</a><a href="#transactions">Transactions</a><a href="#approach">Approach</a>
+      <a href="#about">About</a><a href="#capabilities">Capabilities</a><a href="#services">Services</a><a href="#transactions">Transactions</a><a href="#approach">Approach</a><a href="news/">News</a>
     </nav>
     <a class="btn" href="#contact">Start a conversation <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
     <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span></button>
   </div>
 </header>
 <div class="menu" id="menu">
-  <a href="#about">About</a><a href="#capabilities">Capabilities</a><a href="#services">Specialist services</a><a href="#transactions">Transactions</a><a href="#approach">How we work</a><a href="#contact">Contact</a>
+  <a href="#about">About</a><a href="#capabilities">Capabilities</a><a href="#services">Specialist services</a><a href="#transactions">Transactions</a><a href="#approach">How we work</a><a href="news/">News</a><a href="#contact">Contact</a>
   <a class="small" href="#contact">info@stonewynn.com · +971 4 250 6845</a>
 </div>
 
@@ -474,6 +484,19 @@ footer nav a:hover{color:var(--cream)}
   </div>
 </section>
 
+
+<section id="news" style="background:var(--paper);border-top:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-head rv" style="margin-bottom:28px">
+      <p class="eyebrow">Market intelligence</p>
+      <h2>Latest from the region</h2>
+      <p class="muted">A weekly selection of investments, acquisitions and landmark projects across the UAE and the Middle East.</p>
+    </div>
+    <div class="newsrow rv d1" id="newsrow"></div>
+    <p class="rv d2" style="margin-top:28px"><a class="btn" href="news/">All market intelligence <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></p>
+  </div>
+</section>
+
 <section id="contact" class="dark contact" data-dark>
   <div class="bg" aria-hidden="true"></div>
   <div class="wrap">
@@ -514,7 +537,7 @@ footer nav a:hover{color:var(--cream)}
 <footer>
   <div class="wrap">
     <img src="assets/logo_gold.png" alt="Stonewynn Consulting">
-    <nav aria-label="Footer"><a href="#about">About</a><a href="#capabilities">Capabilities</a><a href="#services">Services</a><a href="#approach">Approach</a><a href="#contact">Contact</a></nav>
+    <nav aria-label="Footer"><a href="#about">About</a><a href="#capabilities">Capabilities</a><a href="#services">Services</a><a href="news/">News</a><a href="#contact">Contact</a></nav>
     <span>© <span id="yr"></span> Stonewynn Consulting · Dubai, UAE</span>
   </div>
 </footer>
@@ -629,6 +652,14 @@ footer nav a:hover{color:var(--cream)}
     var q='subject='+encodeURIComponent('Enquiry from '+name.value.trim())+'&body='+encodeURIComponent('Name: '+name.value+'\nOrganisation: '+document.getElementById('f-org').value+'\nEmail: '+email.value+'\nTelephone: '+document.getElementById('f-phone').value+'\nTopic: '+document.getElementById('f-topic').value+'\n\n'+document.getElementById('f-msg').value);
     try{location.href='mailto:info@stonewynn.com?'+q}catch(err){}
   });
+
+  /* latest news strip */
+  var nr=document.getElementById('newsrow');
+  if(nr){fetch('news/news.json?v='+Date.now()).then(function(r){return r.json()}).then(function(d){
+    var m=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    function e(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+    nr.innerHTML=(d.items||[]).slice(0,3).map(function(i){var p=i.date.split('-');return '<a href="'+e(i.url)+'" target="_blank" rel="noopener"><span class="k"><span>'+e(i.category)+' · '+e(i.region)+'</span><time>'+(+p[2])+' '+m[+p[1]-1]+'</time></span><h3>'+e(i.title)+'</h3><p>'+e(i.summary).slice(0,150)+'…</p></a>'}).join('');
+  }).catch(function(){nr.style.display='none'})}
   document.getElementById('yr').textContent=new Date().getFullYear();
 })();
 </script>
