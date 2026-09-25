@@ -612,7 +612,7 @@ footer nav a:hover{color:var(--cream)}
 
   /* nav */
   var nav=document.getElementById('nav'),darks=document.querySelectorAll('[data-dark], #hero'),links=document.querySelectorAll('.nav-links a');
-  var secs=[].map.call(links,function(a){return document.querySelector(a.getAttribute('href'))});
+  var secs=[].map.call(links,function(a){var h=a.getAttribute('href');return h.charAt(0)==='#'?document.querySelector(h):null});
   var stepsEl=document.getElementById('steps'),prog=document.getElementById('prog'),stepEls=[].slice.call(document.querySelectorAll('.step')),txBg=document.getElementById('txBg');
   function onScroll(){
     var y=window.scrollY;nav.classList.toggle('scrolled',y>40);
