@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>UAE Energy Projects Tracker | Stonewynn Consulting</title>
+<meta name="description" content="Stonewynn Consulting's tracker of upcoming and under-construction oil, gas, LNG, petrochemical and low-carbon projects in the UAE: value, scope, contractors, award dates and completion timelines.">
+<link rel="icon" href="../assets/favicon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Archivo:wght@300;400;500;600&display=swap">
+<style>
+:root{--navy:#16223A;--navy-deep:#0F1829;--cream:#F7F3EC;--cream-2:#EFE9DE;--paper:#FBF9F5;--gold:#9A7D52;--gold-2:#B8996A;--gold-3:#D6BE92;--gold-soft:rgba(154,125,82,.16);--ink:#1B2233;--stone:#6E6F74;--line:#E2DACB;--line-navy:rgba(247,243,236,.14);--display:'Playfair Display',Georgia,serif;--sans:'Archivo','Helvetica Neue',Arial,sans-serif;--max:1280px;--gutter:clamp(20px,5vw,72px);--ease:cubic-bezier(.2,.7,.2,1)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}a{color:inherit;text-decoration:none}button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;padding:0}
+h1,h2,h3,h4{margin:0;font-family:var(--display);font-weight:500;line-height:1.1;text-wrap:balance}p{margin:0}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.wrap{max-width:var(--max);margin:0 auto;padding-inline:var(--gutter)}
+.eyebrow{font-size:11.5px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-2);display:flex;align-items:center;gap:14px}.eyebrow::before{content:"";width:28px;height:1px;background:currentColor}
+.nav{position:fixed;top:0;left:0;right:0;z-index:50;color:var(--cream);transition:.4s}.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:80px}
+.nav.scrolled{background:rgba(22,34,58,.9);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);box-shadow:0 1px 0 var(--line-navy)}
+.brand img{height:44px;width:auto}
+.nav-links{display:flex;gap:34px}.nav-links a{font-size:12.5px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;opacity:.85;position:relative;padding-block:6px}
+.nav-links a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--gold-2);transform:scaleX(0);transform-origin:left;transition:transform .35s var(--ease)}.nav-links a:hover::after,.nav-links a.active::after{transform:scaleX(1)}
+.btn{display:inline-flex;align-items:center;gap:12px;font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;padding:11px 20px;border:1px solid currentColor;transition:.3s}.btn:hover{background:var(--gold);border-color:var(--gold);color:var(--cream)}
+.burger{display:none;width:44px;height:44px;align-items:center;justify-content:center}.burger span{display:block;width:24px;height:1.5px;background:currentColor;position:relative}.burger span::before,.burger span::after{content:"";position:absolute;left:0;width:24px;height:1.5px;background:currentColor}.burger span::before{top:-7px}.burger span::after{top:7px}
+.menu{position:fixed;inset:0;z-index:49;background:var(--navy);color:var(--cream);display:none;flex-direction:column;justify-content:center;padding:var(--gutter);gap:4px}.menu.open{display:flex}.menu a{font-family:var(--display);font-size:32px;padding-block:10px;border-bottom:1px solid var(--line-navy)}
+@media(max-width:960px){.nav-links,.nav .btn{display:none}.burger{display:flex}}
+.hero{background:var(--navy-deep);color:var(--cream);padding:150px 0 0;position:relative;overflow:hidden;isolation:isolate}
+.hero .bg{position:absolute;inset:0;z-index:-1;background:url(../assets/control.jpg) center/cover no-repeat;opacity:.3}
+.hero .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(15,24,41,.96) 35%,rgba(15,24,41,.7))}
+.hero h1{font-size:clamp(40px,6vw,84px);letter-spacing:-.02em;margin:18px 0 20px}.hero h1 em{font-style:italic;font-weight:400;color:var(--gold-3)}
+.hero .lede{max-width:64ch;color:rgba(247,243,236,.85);font-size:clamp(16px,1.3vw,19px)}
+.hero .meta{margin-top:22px;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:rgba(247,243,236,.55)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line-navy);margin-top:48px}
+.stats div{padding:24px 24px 26px 0;border-right:1px solid var(--line-navy)}.stats div:last-child{border-right:0}.stats div+div{padding-left:24px}
+.stats b{display:block;font-family:var(--display);font-weight:500;font-size:clamp(30px,3.4vw,44px);color:var(--gold-3);font-variant-numeric:tabular-nums;line-height:1}
+.stats small{display:block;margin-top:8px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:rgba(247,243,236,.6)}
+@media(max-width:800px){.stats{grid-template-columns:1fr 1fr}.stats div{border-right:0;padding-left:0}}
+.view{padding-block:clamp(56px,7vw,90px);background:var(--paper);border-bottom:1px solid var(--line)}
+.view .cols{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(30px,5vw,80px)}
+.view h2{font-size:clamp(30px,3.8vw,50px);margin:16px 0 22px}
+.view p{color:var(--ink);font-size:17px;max-width:62ch}.view p+p{margin-top:16px}
+.view .side{border-left:1px solid var(--line);padding-left:clamp(20px,3vw,40px);display:grid;gap:22px;align-content:start}
+.view .side h3{font-size:20px;color:var(--navy);margin-bottom:6px}.view .side p{font-size:15px;color:var(--stone)}
+@media(max-width:900px){.view .cols{grid-template-columns:1fr}.view .side{border-left:0;padding-left:0;border-top:1px solid var(--line);padding-top:24px}}
+main{padding-block:clamp(48px,6vw,80px)}
+.toolbar{display:grid;gap:14px;margin-bottom:30px}
+.filters{display:flex;gap:8px;flex-wrap:wrap;align-items:center}.filters .lbl{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--stone);font-weight:600;margin-right:6px}
+.filters button{font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;padding:9px 14px;border:1px solid var(--line);color:var(--stone);transition:.3s}.filters button:hover{border-color:var(--gold);color:var(--navy)}.filters button[aria-pressed=true]{background:var(--navy);border-color:var(--navy);color:var(--cream)}
+.count{font-size:13px;color:var(--stone)}
+.list{display:grid;gap:1px;background:var(--line);border:1px solid var(--line)}
+.proj{background:var(--paper);animation:in .5s var(--ease) both}
+@keyframes in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.proj .head{width:100%;display:grid;grid-template-columns:minmax(0,1.5fr) repeat(4,minmax(0,.7fr)) 40px;gap:18px;align-items:center;padding:22px 26px;text-align:left;transition:background .3s}
+.proj .head:hover{background:var(--cream-2)}
+.proj h3{font-size:21px;color:var(--navy)}
+.proj .sub{font-size:12.5px;color:var(--stone);margin-top:4px}
+.proj .cell{font-size:13.5px;color:var(--ink);font-variant-numeric:tabular-nums}
+.proj .cell small{display:block;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--stone);margin-bottom:2px}
+.proj .val{font-family:var(--display);font-size:22px;color:var(--navy)}
+.pill{display:inline-block;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;padding:5px 9px;border:1px solid var(--line);color:var(--stone)}
+.pill.s-Awarded{background:var(--gold-soft);border-color:var(--gold-2);color:var(--navy)}.pill.s-Under{background:var(--navy);border-color:var(--navy);color:var(--cream)}.pill.s-Commissioning{background:#e6efe6;border-color:#9fbf9f;color:#2b5a2b}.pill.s-Planned,.pill.s-FEED{background:var(--cream-2)}
+.chev{width:22px;height:22px;justify-self:end;color:var(--gold);transition:transform .35s var(--ease)}.proj[open] .chev{transform:rotate(180deg)}
+.proj .body{display:none;padding:0 26px 30px;border-top:1px solid var(--line);margin-top:0}
+.proj[open] .body{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:clamp(22px,3vw,44px);padding-top:24px}
+.body h4{font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:8px}
+.body p{font-size:15px;color:var(--ink)}.body .why{font-family:var(--display);font-style:italic;font-size:17px;color:var(--navy);padding:16px 18px;border-left:2px solid var(--gold);background:var(--cream);margin-top:18px}
+.ctable{width:100%;border-collapse:collapse;font-size:14px}.ctable td{padding:9px 0;border-bottom:1px solid var(--line);vertical-align:top}.ctable td:first-child{font-weight:600;color:var(--navy);padding-right:14px;width:48%}.ctable td:last-child{color:var(--stone)}
+.kv{display:grid;grid-template-columns:1fr 1fr;gap:10px 18px;margin-bottom:18px}.kv div{font-size:14px}.kv small{display:block;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--stone)}
+.src{margin-top:16px;font-size:12.5px;color:var(--stone)}.src a{color:var(--navy);font-weight:600}.src a:hover{color:var(--gold)}
+.empty{padding:48px;text-align:center;color:var(--stone);font-family:var(--display);font-size:20px;background:var(--paper)}
+.note{margin-top:40px;padding-top:24px;border-top:1px solid var(--line);font-size:13px;color:var(--stone);max-width:80ch}
+@media(max-width:1000px){.proj .head{grid-template-columns:minmax(0,1.4fr) repeat(2,minmax(0,.8fr)) 32px}.proj .head .hide-m{display:none}}
+@media(max-width:640px){.proj .head{grid-template-columns:1fr 32px;gap:10px}.proj .head .cell{display:none}.proj[open] .body{grid-template-columns:1fr}.kv{grid-template-columns:1fr}}
+.cta{background:var(--navy);color:var(--cream);padding:clamp(56px,7vw,90px) 0}.cta .wrap{display:flex;justify-content:space-between;align-items:center;gap:30px;flex-wrap:wrap}.cta h2{font-size:clamp(30px,3.6vw,48px)}.cta .btn{border-color:rgba(247,243,236,.55)}
+footer{background:var(--navy-deep);color:rgba(247,243,236,.7);border-top:1px solid var(--line-navy);padding-block:36px;font-size:13px}footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}footer img{height:38px;width:auto}footer nav{display:flex;gap:22px;flex-wrap:wrap;letter-spacing:.1em;text-transform:uppercase;font-size:11.5px}footer nav a:hover{color:var(--cream)}
+</style>
+</head>
+<body>
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="brand" href="../" aria-label="Stonewynn Consulting home"><img src="../assets/logo_gold.png" alt="Stonewynn Consulting"></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="../#about">About</a><a href="../#capabilities">Capabilities</a><a href="../#services">Services</a><a href="../news/">News</a><a href="./" class="active">Energy</a>
+    </nav>
+    <a class="btn" href="../#contact">Start a conversation</a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+<div class="menu" id="menu">
+  <a href="../#about">About</a><a href="../#capabilities">Capabilities</a><a href="../#services">Specialist services</a><a href="../news/">News</a><a href="./">Energy projects</a><a href="../#contact">Contact</a>
+</div>
+
+<section class="hero">
+  <div class="bg" aria-hidden="true"></div>
+  <div class="wrap">
+    <p class="eyebrow">Stonewynn Energy Tracker</p>
+    <h1>The UAE oil &amp; gas <em>project pipeline</em></h1>
+    <p class="lede">Upcoming and under-construction oil, gas, LNG, petrochemical and low-carbon projects across the Emirates, with value, scope, contractors, award dates and completion timelines. Compiled and written by Stonewynn Consulting from official announcements and trade reporting.</p>
+    <p class="meta">Last updated <span id="updated">—</span> · Values in US dollars</p>
+    <div class="stats" id="stats"></div>
+  </div>
+</section>
+
+<section class="view">
+  <div class="wrap cols">
+    <div>
+      <p class="eyebrow" style="color:var(--gold)">The Stonewynn view</p>
+      <h2>A gas-led build-out, financed off balance sheet</h2>
+      <p>The UAE is in the middle of its largest energy construction cycle since the 2000s, and the centre of gravity has shifted decisively from oil to gas. Of the projects we track, the great majority of disclosed value sits in gas processing, sour-gas development, LNG export and the pipelines that connect them. The logic is simple: domestic gas self-sufficiency by 2030, Ruwais LNG's first cargo in 2028, and a chemicals hub at Ruwais that needs feedstock.</p>
+      <p>Three patterns matter for anyone looking to participate. First, ADNOC is packaging megaprojects into multiple EPC lots and financing them with structured debt, which spreads risk but rewards contractors and suppliers who can work inside a joint-venture consortium. Second, Chinese engineering groups now sit alongside the European and Korean incumbents on flagship awards, changing the supply-chain map. Third, in-country value requirements mean fabrication, logistics, accommodation, facilities management and local subcontracting are where much of the money actually lands.</p>
+      <p>The risks are equally clear: fabrication-yard and marine-installation capacity is close to fully booked into the late 2020s, one major contractor is working through administration, and every Ruwais LNG feed project sits on the same 2028 critical path.</p>
+    </div>
+    <div class="side">
+      <div><h3>Where the value is</h3><p>Gas processing, sour gas and LNG account for the bulk of the disclosed pipeline. Offshore oil (Upper and Lower Zakum) adds a further $17bn-plus.</p></div>
+      <div><h3>Who is winning the work</h3><p>NMDC Energy, McDermott, Saipem, Technip Energies, Tecnimont, Wison and CPECC hold the largest packages; Wood, Petrofac and Kent lead the EPCM programmes.</p></div>
+      <div><h3>What to watch next</h3><p>The Bab gas cap EPC tenders, Borouge's EU2 cracker award, and whether Ruwais LNG's feed infrastructure holds its 2028 schedule.</p></div>
+      <div><h3>How Stonewynn helps</h3><p>Feasibility, partner selection, local structuring, procurement support and project coordination for companies positioning to supply, invest in or build alongside these programmes.</p></div>
+    </div>
+  </div>
+</section>
+
+<main>
+  <div class="wrap">
+    <div class="toolbar">
+      <div class="filters" id="fSector" role="group" aria-label="Filter by sector"><span class="lbl">Sector</span>
+        <button aria-pressed="true" data-f="all">All</button><button aria-pressed="false" data-f="Upstream oil">Upstream oil</button><button aria-pressed="false" data-f="Upstream gas">Upstream gas</button><button aria-pressed="false" data-f="LNG">LNG</button><button aria-pressed="false" data-f="Petrochemicals">Petrochemicals</button><button aria-pressed="false" data-f="Midstream & storage">Midstream</button><button aria-pressed="false" data-f="CCUS & low-carbon">Low-carbon</button>
+      </div>
+      <div class="filters" id="fStatus" role="group" aria-label="Filter by status"><span class="lbl">Status</span>
+        <button aria-pressed="true" data-f="all">All</button><button aria-pressed="false" data-f="Planned">Planned</button><button aria-pressed="false" data-f="FEED / tendering">Tendering</button><button aria-pressed="false" data-f="Awarded">Awarded</button><button aria-pressed="false" data-f="Under construction">Under construction</button><button aria-pressed="false" data-f="Commissioning">Commissioning</button>
+      </div>
+      <span class="count" id="count"></span>
+    </div>
+    <div class="list" id="list"><div class="empty">Loading the tracker…</div></div>
+    <p class="note">Values are as disclosed by operators or contractors, or as estimated by the trade press where marked "est."; undisclosed values are shown as such and are excluded from totals. Durations are calculated from contract award to stated completion. This tracker is prepared by Stonewynn Consulting for general information and does not constitute investment advice.</p>
+  </div>
+</main>
+
+<section class="cta">
+  <div class="wrap">
+    <div><p class="eyebrow">Positioning for the pipeline</p><h2 style="margin-top:14px">Want to supply, invest in or build alongside these projects?</h2></div>
+    <a class="btn" href="../#contact">Start a conversation</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <img src="../assets/logo_gold.png" alt="Stonewynn Consulting">
+    <nav aria-label="Footer"><a href="../#about">About</a><a href="../#services">Services</a><a href="../news/">News</a><a href="./">Energy</a><a href="../#contact">Contact</a></nav>
+    <span>© <span id="yr"></span> Stonewynn Consulting · Dubai, UAE</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var list=document.getElementById('list'),count=document.getElementById('count'),stats=document.getElementById('stats'),items=[],fs='all',fst='all';
+  var months=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function fmtD(d){if(!d)return '—';var p=d.split('-');return p.length>1?months[+p[1]-1]+' '+p[0]:p[0]}
+  function money(v,n){if(v==null)return '<span style="font-size:14px;color:var(--stone)">Not disclosed</span>';var e=/est\./i.test(n||'')?'<span style="font-size:11px;color:var(--stone)"> est.</span>':'';return '$'+(v>=1?v.toFixed(v%1?1:0):(v*1000).toFixed(0))+(v>=1?'bn':'m')+e}
+  function render(){
+    var L=items.filter(function(p){return (fs==='all'||p.sector===fs)&&(fst==='all'||p.status===fst)});
+    count.textContent=L.length+' of '+items.length+' projects';
+    if(!L.length){list.innerHTML='<div class="empty">No projects match these filters.</div>';return}
+    list.innerHTML=L.map(function(p,i){var sc=p.status.split(' ')[0];
+      return '<details class="proj" style="animation-delay:'+(i*30)+'ms"><summary class="head" style="list-style:none;cursor:pointer">'+
+        '<div><h3>'+esc(p.name)+'</h3><div class="sub">'+esc(p.operator)+' · '+esc(p.location)+'</div></div>'+
+        '<div class="cell"><small>Value</small><span class="val">'+money(p.value_usd_bn,p.value_note)+'</span></div>'+
+        '<div class="cell hide-m"><small>Sector</small>'+esc(p.sector)+'</div>'+
+        '<div class="cell hide-m"><small>Awarded → Start-up</small>'+fmtD(p.awarded)+' → '+esc(p.start_up||'TBC')+'</div>'+
+        '<div class="cell"><small>Status</small><span class="pill s-'+sc+'">'+esc(p.status)+'</span></div>'+
+        '<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 9l6 6 6-6"/></svg></summary>'+
+        '<div class="body"><div><h4>Scope</h4><p>'+esc(p.scope)+'</p><div class="why">'+esc(p.why_it_matters)+'</div>'+
+        '<div class="src">Sources: '+(p.sources||[]).map(function(s){return '<a href="'+esc(s.url)+'" target="_blank" rel="noopener">'+esc(s.title)+'</a>'}).join(' · ')+'</div></div>'+
+        '<div><div class="kv"><div><small>Value</small>'+esc(p.value_note||'—')+'</div><div><small>Duration</small>'+(p.duration_years?p.duration_years+' years (award to start-up)':'Not yet defined')+'</div><div><small>Award</small>'+fmtD(p.awarded)+'</div><div><small>Expected start-up</small>'+esc(p.start_up||'To be confirmed')+'</div></div>'+
+        '<h4>Contractors &amp; partners</h4><table class="ctable">'+(p.contractors||[]).map(function(c){return '<tr><td>'+esc(c.name)+'</td><td>'+esc(c.role)+'</td></tr>'}).join('')+'</table></div></div></details>'}).join('');
+  }
+  fetch('projects.json?v='+Date.now()).then(function(r){return r.json()}).then(function(d){
+    items=d.projects||[];document.getElementById('updated').textContent=(function(x){var p=x.split('-');return (+p[2])+' '+months[+p[1]-1]+' '+p[0]})(d.updated);
+    var tot=items.reduce(function(a,p){return a+(p.value_usd_bn||0)},0),uc=items.filter(function(p){return p.status==='Under construction'}).length,aw=items.filter(function(p){return p.status==='Awarded'}).length,cs=new Set();items.forEach(function(p){(p.contractors||[]).forEach(function(c){c.name.split(/,|\//).forEach(function(n){cs.add(n.trim())})})});
+    stats.innerHTML='<div><b>$'+tot.toFixed(0)+'bn+</b><small>Disclosed project value</small></div><div><b>'+items.length+'</b><small>Projects tracked</small></div><div><b>'+uc+'</b><small>Under construction</small></div><div><b>'+aw+'</b><small>Awarded in 2026</small></div>';
+    render();
+  }).catch(function(){list.innerHTML='<div class="empty">The tracker could not be loaded. Please try again shortly.</div>'});
+  function bind(id,set){document.querySelectorAll('#'+id+' button').forEach(function(b){b.addEventListener('click',function(){set(b.dataset.f);document.querySelectorAll('#'+id+' button').forEach(function(x){x.setAttribute('aria-pressed',x===b)});render()})})}
+  bind('fSector',function(v){fs=v});bind('fStatus',function(v){fst=v});
+  var nav=document.getElementById('nav');function onS(){nav.classList.toggle('scrolled',window.scrollY>40)}window.addEventListener('scroll',onS,{passive:true});onS();
+  var burger=document.getElementById('burger'),menu=document.getElementById('menu');burger.addEventListener('click',function(){var o=menu.classList.toggle('open');burger.setAttribute('aria-expanded',o);document.body.style.overflow=o?'hidden':''});
+  document.getElementById('yr').textContent=new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
