@@ -1,6 +1,78 @@
 {
-  "updated": "2026-10-19",
+  "updated": "2026-10-26",
   "items": [
+    {
+      "date": "2026-10-26",
+      "category": "Market data",
+      "region": "GCC",
+      "title": "HSBC unfazed by Gulf property risk; IMF sees GCC GDP -4.8% in 2026, +9.1% in 2027",
+      "summary": "HSBC CEO Georges Elhedery says the bank is not worried about its Gulf property and corporate exposure despite the war-driven slowdown, holding just under $400m in Middle East provisions. HSBC sees a UAE project-finance pipeline above $190bn; the IMF expects GCC GDP to fall 4.8% in 2026 and rebound 9.1% in 2027.",
+      "source": "The National",
+      "url": "https://www.thenationalnews.com/business/banking/2026/10/26/hsbc-not-worried-about-gulf-property-sector-exposure-despite-war-volatility-ceo-says/"
+    },
+    {
+      "date": "2026-10-21",
+      "category": "Market data",
+      "region": "Dubai",
+      "title": "Dubai logs 86 home sales above $10m in Q3, down 17%; prime prices dip 5% from Q2",
+      "summary": "Knight Frank counted 86 Dubai home sales of $10m-plus in Q3 2026, down 17% year on year and 34% below Q2, including 13 deals above $25m. Palm Jumeirah led with 27 deals. Prime prices fell 5% quarter on quarter, the first drop since 2020, yet the nine-month tally of 412 deals is up 15%.",
+      "source": "The National",
+      "url": "https://www.thenationalnews.com/business/property/2026/10/21/dubai-records-86-deals-for-10m-homes-in-q3-as-wealthy-flock-despite-iran-war/"
+    },
+    {
+      "date": "2026-10-21",
+      "category": "Market data",
+      "region": "Abu Dhabi",
+      "title": "Abu Dhabi residential sales hit Dh21.5bn in Q3 as value rises 32% on fewer deals",
+      "summary": "Savills recorded 6,085 Abu Dhabi residential transactions worth Dh21.5bn in Q3 2026: deal count fell 7% year on year but value rose 32%. Off-plan took 81% of sales at an average Dh5m, and Dh10m-plus deals more than doubled to 582. Apartment prices averaged Dh22,700 per sq m, up 9%.",
+      "source": "Gulf News",
+      "url": "https://gulfnews.com/business/property/abu-dhabi-records-dh215-billion-in-residential-property-sales-in-q3-2026-across-6085-transactions-1.500717696"
+    },
+    {
+      "date": "2026-10-21",
+      "category": "Development",
+      "region": "Abu Dhabi",
+      "title": "Abu Dhabi set for 30 residential launches worth up to Dh45bn before year-end",
+      "summary": "Metropolitan Capital Real Estate expects about 30 new residential projects in Abu Dhabi over the next 90 days, adding Dh33bn-45bn of inventory. Over Dh40bn of homes have sold since January, 82% off-plan, led by Modon's Hudayriyat Golf Estates (Dh13bn-plus) and Ohana's Manchester City Yas Residences (c.Dh6bn).",
+      "source": "Arabian Business",
+      "url": "https://www.arabianbusiness.com/real-estate/abu-dhabi-property-market-30-new-projects-worth-up-to-12-3bn-forecast-before-end-of-2026"
+    },
+    {
+      "date": "2026-10-21",
+      "category": "Investment",
+      "region": "Abu Dhabi",
+      "title": "Abu Dhabi pitches Dh200bn ADNOC and Dh55bn PPP pipeline to global family offices",
+      "summary": "At the Global Owners and Family Office Congress in Abu Dhabi (19-22 Oct), the Abu Dhabi Chamber courted family offices with a project pipeline including Dh200bn of ADNOC awards over 2026-28 and 24 PPP projects worth Dh55bn. Real estate, tourism, clean energy and supply chains were flagged as priority sectors.",
+      "source": "Gulf Business",
+      "url": "https://gulfbusiness.com/en/2026/abu-dhabi/abu-dhabi-highlights-major-project-pipeline-in-pitch-to-global-family-offices/"
+    },
+    {
+      "date": "2026-10-20",
+      "category": "Development",
+      "region": "Saudi Arabia",
+      "title": "Arada enters Saudi Arabia with Dh14bn Riyadh scheme and Dh49bn land bank",
+      "summary": "Sharjah-based Arada launched Arada KSA with a Dh14bn ($3.8bn) 3,500-villa community on a 2.5m sq m plot in Riyadh's Al Rimal district; construction starts mid-2027 over five years. The developer holds a 10m sq m Saudi land bank valued at Dh49bn across Riyadh, Jeddah and Makkah and targets 100,000 Saudi homes.",
+      "source": "The National",
+      "url": "https://www.thenationalnews.com/business/property/2026/10/20/arada-enters-saudi-arabia-with-38bn-riyadh-project/"
+    },
+    {
+      "date": "2026-10-20",
+      "category": "Market data",
+      "region": "Saudi Arabia",
+      "title": "Saudi property prices rise 1.2% y/y in Q3 but slip 1.2% on quarter, GASTAT says",
+      "summary": "GASTAT's Q3 2026 real estate price index rose 1.2% year on year but fell 1.2% from Q2. Residential prices gained 2.3% (land +4.9%, villas -7.7%), commercial fell 2% and agricultural rose 3.9%. Riyadh prices were up 4.6% while the Eastern Province fell 3.7%.",
+      "source": "Arab News",
+      "url": "https://www.arabnews.com/business/saudi-property-prices-rise-12-in-q3-as-residential-land-gains-3007314"
+    },
+    {
+      "date": "2026-10-15",
+      "category": "Investment",
+      "region": "Dubai",
+      "title": "Gargash Prime and JD Property to invest Dh500m-plus in Dubai Industrial City hub",
+      "summary": "Gargash Prime and JD Property, the infrastructure arm of China's JD.com, signed in Shenzhen to build a 2.5m sq ft regional distribution and fulfilment hub at Dubai Industrial City with investment above Dh500m. Construction starts in 2027 in two phases, with the first taking about 18 months.",
+      "source": "Khaleej Times",
+      "url": "https://www.khaleejtimes.com/business/uaes-gargash-prime-chinas-jd-property-to-invest-over-dh500m-in-new-dubai-logistics-facility"
+    },
     {
       "date": "2026-10-19",
       "category": "Investment",
@@ -288,78 +360,6 @@
       "summary": "Aldar has unveiled Yas Riva Reserve on Yas Island's north-east waterfront: a gated community of 292 four- to six-bedroom villas, 45 of them on the water with optional private pontoons. Prices start at Dh7.9m and sales opened on 26 September; a new bridge will link the enclave to Yas Island.",
       "source": "Gulf News",
       "url": "https://gulfnews.com/business/property/aldar-launches-yas-riva-reserve-a-waterfront-villa-community-on-yas-island-1.500679693"
-    },
-    {
-      "date": "2026-09-24",
-      "category": "Development",
-      "region": "Dubai",
-      "title": "Meraas awards Dh1bn contract for Nad Al Sheba Gardens Phase 7 villas",
-      "summary": "Dubai Holding Real Estate's Meraas awarded GCC Contracting a near-Dh1bn contract for Phase 7 of Nad Al Sheba Gardens. The phase adds 272 homes: 130 villas of four to seven bedrooms and 142 three-bedroom townhouses, with completion targeted for Q2 2028.",
-      "source": "The National",
-      "url": "https://www.thenationalnews.com/news/uae/2026/09/24/seven-bedroom-villas-to-be-built-in-dubais-nad-al-sheba-under-d1-billion-luxury-living-master-plan/"
-    },
-    {
-      "date": "2026-09-22",
-      "category": "Investment",
-      "region": "Qatar",
-      "title": "Qatar lines up $61bn infrastructure and real estate pipeline over five years",
-      "summary": "Qatar expects to award about $38.5bn of infrastructure projects, including PPPs, over the next five years, plus a $22.5bn real estate and hospitality pipeline for private investors. It also set up Doha Investment, a platform to manage QIA's domestic portfolio and attract foreign capital.",
-      "source": "Zawya",
-      "url": "https://www.tradingview.com/news/reuters.com,2026-09-22:newsml_Zaw4VzWvK:0-zawya-qatar-eyes-61bln-infrastructure-real-estate-investments/"
-    },
-    {
-      "date": "2026-09-21",
-      "category": "Landmark project",
-      "region": "Abu Dhabi",
-      "title": "Eagle Hills signs $12bn deal for Maldives Waterfront and Marina at Ras Male",
-      "summary": "Abu Dhabi's Eagle Hills, chaired by Mohamed Alabbar, signed a $12bn agreement with the Maldives government to develop Ras Male on about 1,100 hectares of reclaimed land, 17 minutes from Male. Plans include around 65,000 homes, hotels, branded residences and a marina, with 54,000+ jobs and 99-year leaseholds.",
-      "source": "The National",
-      "url": "https://www.thenationalnews.com/business/property/2026/09/21/abu-dhabis-eagle-hills-signs-20bn-maldives-waterfront-and-marina-deal/"
-    },
-    {
-      "date": "2026-09-20",
-      "category": "Development",
-      "region": "Saudi Arabia",
-      "title": "ROSHN and TMG Saudi ink preliminary deal for 55,000-home Riyadh project",
-      "summary": "PIF-owned ROSHN and TMG Saudi signed a preliminary agreement for a mixed-use Riyadh community of more than 55,000 homes, following a June 2026 MoU. TMG Saudi will hold 51% and ROSHN 49%; the scheme includes retail, hospitality, healthcare and education. Value and timeline were not disclosed.",
-      "source": "Arab News",
-      "url": "https://www.arabnews.com/business/pifs-roshn-tmg-saudi-sign-preliminary-deal-for-55k-home-riyadh-project-3002406"
-    },
-    {
-      "date": "2026-09-16",
-      "category": "Acquisition",
-      "region": "Abu Dhabi",
-      "title": "Aldar-Mubadala JV buys Masdar City Square for Dh918m",
-      "summary": "The Aldar-Mubadala joint venture acquired Masdar City Square, a commercial complex in Abu Dhabi, for Dh918m ($250m). The deal lifts the JV's Masdar City portfolio of commercial and residential income-producing assets to about Dh4.7bn.",
-      "source": "Zawya",
-      "url": "https://www.zawya.com/en/business/investment/aldar-mubadala-jv-acquires-masdar-city-square-for-250mln-797764"
-    },
-    {
-      "date": "2026-09-09",
-      "category": "Landmark project",
-      "region": "Dubai",
-      "title": "Dubai Holding awards Dh5bn contracts for new HQ and Jumeirah Residences Emirates Towers",
-      "summary": "Dubai Holding awarded China State Construction (CSCEC ME) Dh5bn of contracts for its SOM-designed circular headquarters, due 2029, and Jumeirah Residences Emirates Towers. The latter comprises 754 branded residences across two SCDA-designed towers, with handover scheduled for 2030.",
-      "source": "Gulf News",
-      "url": "https://gulfnews.com/business/property/dubai-holding-awards-dh5-billion-construction-contracts-for-new-hq-jumeirah-residences-emirates-towers-1.500668416"
-    },
-    {
-      "date": "2026-09-09",
-      "category": "Market data",
-      "region": "Dubai",
-      "title": "Dubai home values slip 3.1% year-on-year in August as sales volumes cool",
-      "summary": "ValuStrat's index fell 0.2% in August to 218.8 points, down 3.1% annually and 10.2% below February's peak. Villas dipped 1.7% year-on-year, the first annual fall since 2021, while apartments eased 5.3%. Ready sales fell 20.6% and off-plan registrations 40.4% year-on-year.",
-      "source": "Khaleej Times",
-      "url": "https://www.khaleejtimes.com/business/6-in-10-dubai-homes-hold-their-value-as-market-cools-gently-in-august"
-    },
-    {
-      "date": "2026-09-07",
-      "category": "Landmark project",
-      "region": "Saudi Arabia",
-      "title": "PIF launches Gulf Coast Development Company for 20 sq km Al-Khafji destination",
-      "summary": "PIF set up Gulf Coast Development Company to build an integrated coastal destination in Al-Khafji, Eastern Province, spanning about 20 sq km with a 10 km Gulf waterfront. Plans include eight neighbourhoods with 16,000+ homes, roughly 1,400 hotel rooms and marinas; phase one is due in 2030.",
-      "source": "Public Investment Fund",
-      "url": "https://www.pif.gov.sa/en/news-and-insights/press-releases/2026/pif-launches-gulf-coast-development-company-to-deliver-an-integrated-coastal-destination-in-al-khafji-in-saudi-arabia-eastern-province/"
     }
   ]
 }

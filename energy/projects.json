@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-19",
+  "updated": "2026-10-26",
   "projects": [
     {
       "name": "Umm Shaif Gas Cap Development",
@@ -162,13 +162,47 @@
       ]
     },
     {
+      "name": "Umm Shaif Long-Term Development Plan 2.1 (Oil Expansion)",
+      "operator": "ADNOC Offshore",
+      "sector": "Upstream oil",
+      "location": "Umm Shaif field, c.150 km north-west of Abu Dhabi, with new facilities on Das Island",
+      "value_usd_bn": null,
+      "value_note": "Not disclosed; the preceding LTDP-2 phase was reported at c.$2bn (press est.)",
+      "scope": "Two main EPC packages to sustain Umm Shaif oil output at around 390,000 b/d with a 430,000 b/d peak: offshore water-injection and ESP wellhead towers, riser platform, manifold and flare towers, bridges, flowlines, main oil line, water-injection and gas export pipelines and subsea cables; a new combined artificial island with two 135,000 b/d separation trains, two 275 mmscfd gas compression and dehydration trains, produced-water treatment and water injection; plus an optimised crude stabilisation train on Das Island. Expression-of-interest exercise completed in June 2026; ADNOC Offshore is weighing early contractor engagement before the main EPC tender.",
+      "contractors": [
+        {
+          "name": "Worley",
+          "role": "FEED"
+        }
+      ],
+      "awarded": null,
+      "start_up": null,
+      "duration_years": null,
+      "status": "Planned",
+      "why_it_matters": "The next multi-billion-dollar offshore oil package after Upper Zakum and Lower Zakum, and the third phase of a programme that previously went to NMDC Energy (LTDP-1, $946m) and McDermott (LTDP-2). Early contractor engagement would signal ADNOC's preferred bidders well before tender.",
+      "sources": [
+        {
+          "title": "MEED - Adnoc weighs early engagement for Umm Shaif expansion (21 Oct 2026)",
+          "url": "https://www.meed.com/adnoc-offshore-to-start-early-engagement-for-umm-shaif-field-expansion"
+        },
+        {
+          "title": "MEED - Contractors express interest in next phase of Umm Shaif oil field expansion (9 Jun 2026)",
+          "url": "https://www.meed.com/contractors-express-interest-in-next-phase-of-umm-shaif-oil-field-expansion"
+        },
+        {
+          "title": "Construction Review Online - Umm Shaif LTDP-2.1 expansion advances towards EPC tender (22 Oct 2026)",
+          "url": "https://constructionreviewonline.com/umm-shaif-ltdp-2-1-expansion-adnocs-2bn-offshore-construction-plan-advances-towards-epc-tender/"
+        }
+      ]
+    },
+    {
       "name": "Bab Gas Cap Development",
       "operator": "ADNOC with TotalEnergies, BP, CNPC, JODCO, ZhenHua, GS E&P",
       "sector": "Upstream gas",
       "location": "Bab field, onshore Abu Dhabi",
       "value_usd_bn": 8,
       "value_note": "Est. $8bn for the main gas plant EPC package per MEED and Upstream; overall investment not disclosed and FID not yet taken",
-      "scope": "Development of the gas cap at the Bab oil field, described as the world's largest gas cap development, targeting around 1.5 bscfd of natural gas (about 15% of ADNOC Gas's processing capacity) for domestic supply and LNG feed. ADNOC Gas has tendered a processing plant for up to 1.85 bscfd of raw gas in four EPC packages (main plant, early civil works, pipelines and non-process works); technical bids for the main plant are due 16 November 2026, extended from 17 July.",
+      "scope": "Development of the gas cap at the Bab oil field, described as the world's largest gas cap development, targeting around 1.5 bscfd of natural gas (about 15% of ADNOC Gas's processing capacity) for domestic supply and LNG feed. ADNOC Gas has tendered a processing plant for up to 1.85 bscfd of raw gas in four EPC packages (main plant, early civil works, pipelines and non-process works); technical bids for the main plant are due 16 November 2026, extended from 17 July. Separately, ADNOC Onshore invited bids in October 2026 for a well tie-in package, estimated at more than $800m, covering the gas-producing and gas-injection wells at Bab.",
       "contractors": [
         {
           "name": "TotalEnergies 10%, BP 10%, CNPC 8%, JODCO 5%, ZhenHua Oil 4%, GS E&P 3%",
@@ -199,7 +233,7 @@
       "start_up": "2029 onwards (est.)",
       "duration_years": null,
       "status": "FEED / tendering",
-      "why_it_matters": "The main plant EPC, estimated at $8bn, is the largest live gas tender in the UAE. Four international consortia are bidding, and ADNOC Gas says it will move prudently before taking FID, so award timing is the key variable to watch after Umm Shaif.",
+      "why_it_matters": "The main plant EPC, estimated at $8bn, is the largest live gas tender in the UAE. Four international consortia are bidding, and ADNOC Gas says it will move prudently before taking FID, so award timing is the key variable to watch after Umm Shaif. The $800m-plus well tie-in tender launched in October adds a second large live package for onshore EPC contractors.",
       "sources": [
         {
           "title": "Abu Dhabi Media Office, 24 Jun 2026",
@@ -220,6 +254,10 @@
         {
           "title": "Construction Review Online, 28 Sep 2026",
           "url": "https://constructionreviewonline.com/8bn-bab-gas-cap-project-uae-gas-plant-bid-race-widens-attracting-four-major-consortiums/"
+        },
+        {
+          "title": "MEED - Adnoc Onshore seeks bids for Bab gas cap well tie-in project (23 Oct 2026)",
+          "url": "https://www.meed.com/adnoc-onshore-seeks-bids-for-bab-gas-cap-well-tie-in-project"
         }
       ]
     },
@@ -268,7 +306,7 @@
       "location": "Fujairah, on the Gulf of Oman outside the Strait of Hormuz (per trade press, referred to as East Coast LNG); c.160 km feed-gas pipeline from Habshan",
       "value_usd_bn": 5,
       "value_note": "Est. more than $5bn per Upstream (press estimate); not disclosed by ADNOC",
-      "scope": "Single-train 4 million t/y liquefaction plant with CO2 removal, dehydration, mercury removal and sulphur reduction, LNG storage tanks, boil-off gas handling, export jetty and utilities, plus a c.160 km feed-gas pipeline and additional compression at the Habshan complex. Being procured through a FEED-to-EPC design competition.",
+      "scope": "Single-train 4 million t/y liquefaction plant with CO2 removal, dehydration, mercury removal and sulphur reduction, LNG storage tanks, boil-off gas handling, export jetty and utilities, plus a c.160 km feed-gas pipeline and additional compression at the Habshan complex. Being procured through a FEED-to-EPC design competition. ADNOC scheduled a site visit for the FEED-to-EPC competitors in October 2026.",
       "contractors": [
         {
           "name": "Saipem / L&T Energy Hydrocarbon",
@@ -300,6 +338,70 @@
         {
           "title": "Alliance News via MarketScreener, citing Upstream — Saipem and MAIRE bid for ADNOC's LNG terminal in Fujairah (24 Sep 2026)",
           "url": "https://www.marketscreener.com/news/saipem-and-maire-bid-for-adnoc-s-lng-terminal-in-fujairah-ce785adedc80f424"
+        },
+        {
+          "title": "MEED - Adnoc to host site visit for new LNG project in the UAE (19 Oct 2026)",
+          "url": "https://www.meed.com/adnoc-to-host-site-visit-for-new-lng-project-in-the-uae"
+        }
+      ]
+    },
+    {
+      "name": "Al Mandous Underground Crude Storage Expansion (Phase 2)",
+      "operator": "ADNOC (ADNOC Onshore)",
+      "sector": "Midstream & storage",
+      "location": "Al Mandous, Fujairah, on the Gulf of Oman outside the Strait of Hormuz",
+      "value_usd_bn": null,
+      "value_note": "Not disclosed; Phase 1 EPC (three 14m-barrel caverns) was $1.21bn, awarded to SK E&C in 2019",
+      "scope": "Second phase adding about 25 million barrels of underground rock-cavern crude storage to the existing 42 million-barrel, three-cavern Al Mandous complex. ADNOC issued an expression of interest in April 2024, put the project on hold in June 2025 and has now revived it after completing a new contractor prequalification exercise in 2026; the main EPC tender has not yet been issued.",
+      "contractors": [
+        {
+          "name": "Geostock",
+          "role": "FEED (with ADNOC Onshore)"
+        }
+      ],
+      "awarded": null,
+      "start_up": null,
+      "duration_years": null,
+      "status": "Planned",
+      "why_it_matters": "Revived in the wake of the 2026 Hormuz disruption, the expansion would lift strategic crude storage on the UAE's east coast by around 60%, complementing the Habshan-Fujairah pipeline and the planned east-coast LNG plant. A specialist cavern-construction package with few qualified contractors.",
+      "sources": [
+        {
+          "title": "MEED - Adnoc to revive underground oil storage facility expansion (22 Oct 2026)",
+          "url": "https://www.meed.com/adnoc-to-revive-underground-oil-storage-facility-expansion"
+        },
+        {
+          "title": "Oil & Gas Middle East - Adnoc to revive underground oil storage facility expansion (23 Oct 2026)",
+          "url": "https://www.oilandgasmiddleeast.com/news/adnoc-storage-expansion-restart"
+        }
+      ]
+    },
+    {
+      "name": "ADNOC Refining Capacity Enhancement and Sustainable Aviation Fuel Projects (Technip Energies)",
+      "operator": "ADNOC Refining",
+      "sector": "Refining",
+      "location": "Abu Dhabi (site not specified in the announcement; ADNOC Refining's main complex is Ruwais)",
+      "value_usd_bn": null,
+      "value_note": "Not disclosed",
+      "scope": "Two contracts signed with Technip Energies on 20 October 2026 during the UAE-France Business Dialogue: one for a refining capacity enhancement project and one for a sustainable aviation fuel (SAF) project. Scope, capacities and schedule have not been published.",
+      "contractors": [
+        {
+          "name": "Technip Energies",
+          "role": "Contractor (nature of contracts not disclosed)"
+        }
+      ],
+      "awarded": "2026-10",
+      "start_up": null,
+      "duration_years": null,
+      "status": "Awarded",
+      "why_it_matters": "First disclosed step in a new refining investment cycle at ADNOC Refining after the Ruwais crude flexibility project, and a formal SAF project following the refinery's 2023 ISCC certification for co-processing. Details of the capacity uplift will determine the size of the follow-on EPC market.",
+      "sources": [
+        {
+          "title": "Abu Dhabi Media Office - UAE-France Business Dialogue (20 Oct 2026)",
+          "url": "https://www.mediaoffice.abudhabi/en/crown-prince-news/crown-prince-of-abu-dhabi-and-french-president-attend-uae-france-business-dialogue-to-strengthen-strategic-partnership-in-energy-and-artificial-intelligence/"
+        },
+        {
+          "title": "MEED - Adnoc Refining and Technip Energies sign pair of agreements (22 Oct 2026)",
+          "url": "https://www.meed.com/adnoc-refining-and-technip-energies-sign-pair-of-agreements"
         }
       ]
     },
@@ -415,6 +517,31 @@
         {
           "title": "MEED — Adnoc Onshore seeks bids for Bu Hasa field EOR project (16 Oct 2026)",
           "url": "https://www.meed.com/adnoc-onshore-seeks-bids-for-bu-hasa-field-eor-project"
+        }
+      ]
+    },
+    {
+      "name": "Rumaitha and Shanayel Field Facilities Project",
+      "operator": "ADNOC Onshore",
+      "sector": "Upstream oil",
+      "location": "Rumaitha and Shanayel fields, onshore Abu Dhabi",
+      "value_usd_bn": null,
+      "value_note": "Not disclosed",
+      "scope": "On-plot and off-plot facilities to enhance and sustain oil production from the Rumaitha and Shanayel fields at 45,000 b/d. ADNOC Onshore received expressions of interest in January 2026 and contractors were preparing commercial bids in October 2026.",
+      "contractors": [],
+      "awarded": null,
+      "start_up": null,
+      "duration_years": null,
+      "status": "FEED / tendering",
+      "why_it_matters": "A mid-sized onshore brownfield EPC that keeps the 5 million b/d capacity programme moving at ADNOC's smaller north-east fields while the giant Bab and Bu Hasa expansions run; a likely target for regional EPC contractors below the tier-one bracket.",
+      "sources": [
+        {
+          "title": "MEED - Contractors prepare prices for Adnoc Onshore field facilities project (20 Oct 2026)",
+          "url": "https://www.meed.com/contractors-prepare-prices-for-adnoc-onshore-field-facilities-project"
+        },
+        {
+          "title": "MEED - Adnoc Onshore receives interest for field facilities project (9 Jan 2026)",
+          "url": "https://www.meed.com/adnoc-onshore-receives-interest-for-field-facilities-project"
         }
       ]
     },
