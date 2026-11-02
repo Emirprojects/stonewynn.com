@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-26",
+  "updated": "2026-11-02",
   "projects": [
     {
       "name": "Umm Shaif Gas Cap Development",
@@ -48,6 +48,48 @@
         {
           "title": "MEED, 4 Aug 2026",
           "url": "https://www.meed.com/lt-announces-major-contract-win-from-adnoc-offshore"
+        }
+      ]
+    },
+    {
+      "name": "West-East 1 Crude Oil Pipeline (Second Hormuz Bypass to Fujairah)",
+      "operator": "ADNOC",
+      "sector": "Midstream & storage",
+      "location": "Jebel Dhanna / Habshan, Abu Dhabi, to the Port of Fujairah on the Gulf of Oman",
+      "value_usd_bn": null,
+      "value_note": "Not disclosed; main pipeline EPC contractor not publicly identified",
+      "scope": "Second crude export pipeline from Abu Dhabi's western onshore hub to Fujairah, designed to roughly double ADNOC's export capacity bypassing the Strait of Hormuz from about 1.5-1.8 million bpd on the existing 48-inch, 360 km-plus Habshan-Fujairah line to more than 3 million bpd (Kpler est.). A linked network of roughly 300 km of offshore-to-onshore feeder pipelines from Das and Zirku islands to Jebel Dhanna is in fast-track FEED. ADNOC said in May 2026 the line was almost 50% complete and construction was being accelerated; Bloomberg reported on 28 October 2026 that ADNOC has told Asian term customers it may start delivering Upper Zakum crude from Fujairah in the first months of 2027.",
+      "contractors": [
+        {
+          "name": "NT Energies (NMDC Energy / Technip Energies JV)",
+          "role": "Concept studies and FEED, offshore islands-to-Jebel Dhanna feeder pipelines (per MEED sources)"
+        },
+        {
+          "name": "Worley",
+          "role": "PMC, offshore-to-onshore feeder pipelines (per MEED sources)"
+        }
+      ],
+      "awarded": null,
+      "start_up": "Early 2027 (per Bloomberg, 28 Oct 2026); material export impact from mid-2027 (Kpler est.)",
+      "duration_years": null,
+      "status": "Under construction",
+      "why_it_matters": "The most strategically important piece of UAE energy infrastructure during the 2026 Hormuz disruption: it determines how much Abu Dhabi crude can reach market without transiting the strait and underpins the 5 million bpd capacity target. Expect follow-on tenders for Fujairah terminal, storage and the offshore feeder pipelines.",
+      "sources": [
+        {
+          "title": "The National - UAE's West-East pipeline expansion to become operational in 2027 (15 May 2026)",
+          "url": "https://www.thenationalnews.com/business/energy/2026/05/15/uaes-west-east-pipeline-expansion-to-become-operational-in-2027-doubling-oil-export-capacity/"
+        },
+        {
+          "title": "Gulf News - ADNOC CEO says Hormuz bypass pipeline nearly 50% complete (20 May 2026)",
+          "url": "https://gulfnews.com/business/energy/adnoc-ceo-says-hormuz-bypass-pipeline-nearly-50-complete-1.500547573"
+        },
+        {
+          "title": "MEED - Adnoc plans new offshore-to-onshore oil transport pipeline (20 Aug 2026)",
+          "url": "https://www.meed.com/adnoc-plans-new-offshore-to-onshore-oil-transport-pipeline"
+        },
+        {
+          "title": "Oil & Gas Middle East - Upper Zakum may avoid Hormuz in 2027 (29 Oct 2026)",
+          "url": "https://www.oilandgasmiddleeast.com/news/upper-zakum-fujairah-pipeline"
         }
       ]
     },
@@ -412,7 +454,7 @@
       "location": "Habshan to Al-Nouf, Abu Dhabi",
       "value_usd_bn": 0.42,
       "value_note": "Est. more than $417m: Kalpataru disclosed a UAE gas pipeline EPC award of over INR 40bn without naming the client, and MEED sources link it to this contract; ADNOC Gas has not disclosed a value",
-      "scope": "A 127 km, 56-inch sales gas pipeline from the Habshan gas compression complex to a new customer receiving station at Al-Nouf, with four block valve stations, custody metering and pressure-regulation facilities and tie-ins to the Meram and Estidama package 3 lines. It is sized to deliver 600–660 mmscfd for phase 2 of an Abu Dhabi AI data centre and 650–715 mmscfd for EWEC's relocated Mirfa power assets.",
+      "scope": "A 127 km, 56-inch sales gas pipeline from the Habshan gas compression complex to a new customer receiving station at Al-Nouf, with four block valve stations, custody metering and pressure-regulation facilities and tie-ins to the Meram and Estidama package 3 lines. It is sized to deliver 600–660 mmscfd for phase 2 of an Abu Dhabi AI data centre and 650–715 mmscfd for EWEC's relocated Mirfa power assets. MEED reported on 28 October 2026 that a UAE-based engineering firm (not named in the published summary) has been engaged for the detailed engineering works, signalling execution is under way.",
       "contractors": [
         {
           "name": "Kalpataru Projects International",
@@ -436,6 +478,73 @@
         {
           "title": "Zawya Projects — India's Kalpataru Projects wins $417mln UAE gas pipeline project order (28 Sep 2026)",
           "url": "https://www.zawya.com/en/projects/gcc/indias-kalpataru-projects-wins-417mln-uae-gas-pipeline-project-order-1305384"
+        },
+        {
+          "title": "MEED - Local firm wins Adnoc Gas project detailed engineering works (28 Oct 2026)",
+          "url": "https://www.meed.com/local-firm-wins-adnoc-gas-project-detailed-engineering-works"
+        }
+      ]
+    },
+    {
+      "name": "Bab and North East Bab One Tie-In Project",
+      "operator": "ADNOC Onshore",
+      "sector": "Upstream oil",
+      "location": "Bab, Al-Nouf, Rumaitha and Shanayel fields, onshore Abu Dhabi",
+      "value_usd_bn": 1.2,
+      "value_note": "Est. $1.2bn programme budget per MEED sources; individual contract values not disclosed",
+      "scope": "18 EPC packages to tie in new oil-producing, water-injection and WAG wells across the Bab asset (packages 1-8 and 17) and the North East Bab fields of Al-Nouf, Rumaitha and Shanayel (packages 9-15 and 18), plus digitalisation of existing wells at Bab and Bu Hasa (package 16). Work covers residual engineering, procurement, site surveys, construction of mini-pads, well bays, clusters, manifolds and common facilities, testing and commissioning support, under ADNOC's Accelerated Integrated Programme 5. Six bidders submitted best offers in May 2026; MEED reported on 27 October 2026 that Robt Stone Middle East and Jereh Group have been notified of selection, with formal kick-off pending.",
+      "contractors": [
+        {
+          "name": "Robt Stone Middle East",
+          "role": "Selected EPC contractor (per MEED industry sources; packages not disclosed)"
+        },
+        {
+          "name": "Jereh Group",
+          "role": "Selected EPC contractor (per MEED industry sources; packages not disclosed)"
+        }
+      ],
+      "awarded": "2026-10",
+      "start_up": null,
+      "duration_years": null,
+      "status": "Awarded",
+      "why_it_matters": "Converts ADNOC Onshore's drilling campaign into production toward the 5 million bpd target by hooking up wells across its largest onshore assets. Selection of a UAE contractor and a Chinese contractor over Galfar Emirates, Kalpataru, Matrix and Target shows how competitive the onshore brownfield EPC market has become.",
+      "sources": [
+        {
+          "title": "MEED - Adnoc Onshore selects contractors for well tie-ins project (27 Oct 2026)",
+          "url": "https://www.meed.com/adnoc-onshore-picks-contractors-for-major-well-tie-ins-project"
+        },
+        {
+          "title": "MEED - Contractors submit best offers for major Adnoc Onshore project (20 May 2026)",
+          "url": "https://guest.meed.com/contractors-submit-best-offers-for-major-adnoc-onshore-project/"
+        }
+      ]
+    },
+    {
+      "name": "Hedebah Gas-Condensate Field Development (Phase 1)",
+      "operator": "Sharjah National Oil Corporation (SNOC)",
+      "sector": "Upstream gas",
+      "location": "Onshore Sharjah, north-east of the Sajaa field",
+      "value_usd_bn": null,
+      "value_note": "Not disclosed",
+      "scope": "First development phase of Hedebah, Sharjah's fifth onshore field, discovered in May 2024 with first gas within a year; the Hedebah-02 appraisal well (13,200 ft) confirmed additional reservoirs in November 2025. Phase 1 covered appraisal drilling, well evaluation, gathering infrastructure, pipelines and commissioning. SNOC announced completion on 27 October 2026, saying the field more than doubles its gas output, with production ramping through 2027 and reaching plateau in 2028; preparation of the next phase has begun.",
+      "contractors": [],
+      "awarded": null,
+      "start_up": "Phase 1 complete Oct 2026; ramp-up through 2027, plateau 2028",
+      "duration_years": null,
+      "status": "Commissioning",
+      "why_it_matters": "A rare non-ADNOC upstream start-up: the field more than doubles Sharjah's domestic gas production, easing the emirate's dependence on imported gas for power and industry, and sets up follow-on development phases and tie-in work for contractors at the Sajaa complex.",
+      "sources": [
+        {
+          "title": "Gulf News - Sharjah boosts gas production with Hedebah field expansion (27 Oct 2026)",
+          "url": "https://gulfnews.com/business/energy/sharjah-announces-major-gas-production-boost-as-hedebah-field-expansion-progresses-1.500725090"
+        },
+        {
+          "title": "Nukta - SNOC doubles Sharjah gas production as Hedebah field comes online (27 Oct 2026)",
+          "url": "https://nukta.com/snoc-doubles-sharjah-gas-production-as-hedebah-field-comes-online"
+        },
+        {
+          "title": "MEED - Sharjah brings Hedebah gas field online (30 Oct 2026)",
+          "url": "https://www.meed.com/sharjah-brings-hedebah-gas-field-online"
         }
       ]
     },
@@ -547,12 +656,12 @@
     },
     {
       "name": "Hail and Ghasha Ultra-Sour Gas Development",
-      "operator": "ADNOC with Eni, PTTEP and OMV",
+      "operator": "ADNOC with Eni and PTTEP (via Seela Energies JV) and OMV",
       "sector": "Upstream gas",
       "location": "Al Dhafra offshore artificial islands and onshore Ruwais, Abu Dhabi",
       "value_usd_bn": 17,
       "value_note": "Est. around $17bn total EPC; $11bn structured financing closed December 2025",
-      "scope": "Four artificial-island drilling centres, offshore structures and subsea pipelines plus onshore gas processing, sulphur recovery and CO2 handling to produce over 1.5 bscfd of gas while capturing 1.5 mtpa of CO2, targeting net-zero operational emissions.",
+      "scope": "Four artificial-island drilling centres, offshore structures and subsea pipelines plus onshore gas processing, sulphur recovery and CO2 handling to produce over 1.5 bscfd of gas while capturing 1.5 mtpa of CO2, targeting net-zero operational emissions. In October 2026 Eni and PTTEP transferred their 10% interests each into Seela Energies B.V., a 50:50 joint venture, leaving their indirect stakes unchanged; ADNOC remains operator. Long-term output is targeted at over 1.8 bscfd of gas and 150,000 bpd of oil and condensate.",
       "contractors": [
         {
           "name": "NMDC Energy / Saipem JV",
@@ -561,13 +670,17 @@
         {
           "name": "Tecnimont (MAIRE)",
           "role": "Onshore EPC package"
+        },
+        {
+          "name": "Seela Energies B.V. (Eni Abu Dhabi / PTTEP MENA, 50:50)",
+          "role": "Holding vehicle for the partners' combined 20% concession interest (from Oct 2026)"
         }
       ],
       "awarded": "2023-10",
       "start_up": "By end-2029",
       "duration_years": 6,
       "status": "Under construction",
-      "why_it_matters": "The UAE's largest gas project and the world's first sour gas development targeting net-zero operations. The $11bn financing shows how ADNOC funds megaprojects off balance sheet.",
+      "why_it_matters": "The UAE's largest gas project and the world's first sour gas development targeting net-zero operations. The $11bn financing shows how ADNOC funds megaprojects off balance sheet. The Eni-PTTEP consolidation into Seela Energies, completed in October 2026 with all approvals, is intended to improve the partners' access to financing for their share of the build.",
       "sources": [
         {
           "title": "ADNOC press release, 5 Oct 2023",
@@ -576,6 +689,14 @@
         {
           "title": "The National, 18 Dec 2025",
           "url": "https://www.thenationalnews.com/business/energy/2025/12/18/adnoc-raises-11bn-for-hail-and-ghasha-gas-project/"
+        },
+        {
+          "title": "Oil & Gas Middle East - Ghasha: PTTEP, Eni form 50-50 JV (23 Oct 2026)",
+          "url": "https://www.oilandgasmiddleeast.com/news/ghasha-pttep-eni-joint-venture"
+        },
+        {
+          "title": "MEED - Eni and PTTEP combine stakes in Abu Dhabi's Ghasha concession (29 Oct 2026)",
+          "url": "https://www.meed.com/eni-and-pttep-combine-stakes-in-abu-dhabis-ghasha-concession"
         }
       ]
     },
