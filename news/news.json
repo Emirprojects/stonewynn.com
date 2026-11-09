@@ -1,6 +1,78 @@
 {
-  "updated": "2026-11-02",
+  "updated": "2026-11-09",
   "items": [
+    {
+      "date": "2026-11-07",
+      "category": "Market data",
+      "region": "Abu Dhabi",
+      "title": "Abu Dhabi property deals surge 76% to Dh171bn in nine months; foreign inflows up 131%",
+      "summary": "ADREC logged 38,483 transactions worth Dh171.26bn in January–September, with sales of Dh119.3bn (up 105%) and Dh45.9bn of mortgages. Foreign investment in investment zones rose 131% to Dh86.1bn and non-resident FDI hit Dh17.2bn, already above 2025's Dh8.2bn. Al Reem Island led with Dh29.9bn.",
+      "source": "Abu Dhabi Media Office",
+      "url": "https://www.mediaoffice.abudhabi/en/economy/abu-dhabi-real-estate-centre-records-761-year-on-year-increase-in-transaction-value-reaching-aed1712bn-during-first-9-months-of-2026/"
+    },
+    {
+      "date": "2026-11-06",
+      "category": "Market data",
+      "region": "Dubai",
+      "title": "Dubai rental contracts reach 339,557 in ten months, putting a record year within reach",
+      "summary": "fäm Properties data show 339,557 freehold rental contracts registered to end-October, up 6.8% y/y, against a 2025 full-year total of 377,976. October alone had 44,841 contracts, with one-bedroom units 41% of the total. DXBinteract separately counted 11,974 October sales worth Dh35bn, Dh19.2bn of it off-plan.",
+      "source": "Arabian Business",
+      "url": "https://www.arabianbusiness.com/real-estate/dubai-rental-market-heads-for-new-record-as-339557-contracts-registered-in-2026"
+    },
+    {
+      "date": "2026-11-06",
+      "category": "Market data",
+      "region": "Ras Al Khaimah",
+      "title": "RAK Properties targets record 1,400 handovers as nine-month sales slow to Dh476m",
+      "summary": "The Ras Al Khaimah developer reported nine-month revenue of Dh809.7m and net profit of Dh111.4m, but sold only 260 units worth Dh476m amid regional volatility. Its backlog rose to Dh3.18bn, the average ticket to Dh1.83m, and it plans 691 further Q4 handovers plus relaunches of The Strand and Lunara in early 2027.",
+      "source": "Khaleej Times",
+      "url": "https://www.khaleejtimes.com/business/rak-properties-targets-record-home-handovers-by-year-end-despite-sales-slowdown"
+    },
+    {
+      "date": "2026-11-05",
+      "category": "Acquisition",
+      "region": "Dubai",
+      "title": "Emaar board approves Dh15-a-share buyout to take Emaar Development private",
+      "summary": "Emaar Properties will pay about Dh12bn ($3.3bn) for the roughly 19% of Emaar Development it does not own, a 19% premium to the pre-announcement close, and delist the unit from the DFM. The group also reported nine-month pre-tax profit up 18% to Dh19.8bn, a Dh158.8bn backlog and a Dh4.4bn special dividend.",
+      "source": "The National",
+      "url": "https://www.thenationalnews.com/business/markets/2026/11/05/emaar-plans-to-delist-construction-unit-after-board-approves-33-billion-buyout/"
+    },
+    {
+      "date": "2026-11-05",
+      "category": "Market data",
+      "region": "Abu Dhabi",
+      "title": "Abu Dhabi home sales jump 30% in October to Dh13bn as Hudayriyat leads off-plan",
+      "summary": "Springfield Properties counted 2,809 residential sales worth Dh12.97bn in October, up 30% m/m and 35% y/y, with all asset classes at Dh14.31bn. Hudayriyat Island took Dh4.46bn across 603 off-plan deals and Modon led developers with Dh4.53bn. Forty-four homes sold above Dh25m, topped by a Dh100m sale at Bada Al Jubail.",
+      "source": "Arabian Business",
+      "url": "https://www.arabianbusiness.com/real-estate/abu-dhabi-property-sales-jump-30-as-buyers-spend-aed-13-billion-on-homes-in-october"
+    },
+    {
+      "date": "2026-11-03",
+      "category": "Investment",
+      "region": "Abu Dhabi",
+      "title": "XRG to buy Shell's North West Shelf LNG stake for $1.5bn in first Australian deal",
+      "summary": "ADNOC's international investment arm agreed to acquire Shell's interest in Australia's 14.3 mtpa North West Shelf LNG project, which holds about 4.4 tcf of remaining resources, subject to regulatory approval. XRG, launched in 2024, says its enterprise value exceeds $150bn and aims to double assets within a decade.",
+      "source": "The National",
+      "url": "https://www.thenationalnews.com/business/energy/2026/11/03/adnocs-xrg-to-buy-australian-lng-stake-for-15bn/"
+    },
+    {
+      "date": "2026-11-02",
+      "category": "Policy",
+      "region": "Dubai",
+      "title": "Dubai moves Ejari registration, renewal and cancellation on to the DubaiNow app",
+      "summary": "Dubai Land Department's upgraded Ejari lets tenants and landlords register, renew or cancel tenancy contracts digitally with instant certificates, UAE PASS authentication and DEWA deposit payment in one journey. DLD data in the release show Q1 2026 rental contracts worth Dh32.2bn: 118,385 new and 135,607 renewals.",
+      "source": "Arabian Business",
+      "url": "https://www.arabianbusiness.com/real-estate/dubai-ejari-service"
+    },
+    {
+      "date": "2026-11-01",
+      "category": "Investment",
+      "region": "Bahrain",
+      "title": "Bahrain grants Golden Licences to $3.89bn of projects including Meliá Amwaj waterfront",
+      "summary": "At Gateway Gulf 2026, Bahrain EDB awarded Golden Licences to four projects worth $3.89bn: a DHL regional MRO facility at Bahrain International Airport, three Capital A aviation ventures, a Meliá and Infracorp waterfront scheme at Amwaj with a five-star hotel and branded residences, and Digital City Bahrain.",
+      "source": "Bahrain EDB via PR Newswire",
+      "url": "https://www.prnewswire.co.uk/news-releases/bahrain-awards-golden-licenses-to-four-new-projects-at-gateway-gulf-2026-valued-at-usd-3-89-billion-302925749.html"
+    },
     {
       "date": "2026-11-01",
       "category": "Policy",
@@ -288,78 +360,6 @@
       "summary": "Global SWF data show MENA sovereign investors deployed $102bn across 245 deals in January–September 2026, 39% of global state-owned dealmaking. Mubadala led with $26.2bn, ahead of PIF ($14bn), ADIA ($12.2bn), L'imad ($10.8bn) and QIA ($10.3bn). Real estate took 11% of deal value.",
       "source": "Zawya",
       "url": "https://www.tradingview.com/news/reuters.com,2026-10-02:newsml_ZawbfJFnG:0-mubadala-leads-gcc-wealth-fund-investments-ahead-of-saudi-pif/"
-    },
-    {
-      "date": "2026-10-01",
-      "category": "Market data",
-      "region": "Dubai",
-      "title": "Dubai property deals hit Dh574bn in nine months; sales second-highest on record",
-      "summary": "Dubai Land Department data show Dh574.1bn of real estate transactions across 165,018 deals in January–September 2026. Sales reached Dh379.4bn from 123,416 deals, the second-highest nine-month value on record, including Dh183.3bn off-plan. September sales totalled Dh29.7bn.",
-      "source": "Emirates 24|7",
-      "url": "https://www.emirates247.com/business/dubai-real-estate-transactions-hit-dh574-billion-in-nine-months-second-highest-sales-value-in-market-history/6205"
-    },
-    {
-      "date": "2026-10-01",
-      "category": "Policy",
-      "region": "Abu Dhabi",
-      "title": "Abu Dhabi launches AI-driven platform for investing in government land and assets",
-      "summary": "Abu Dhabi's Department of Municipalities and Transport unveiled the Government Asset Investment Service on TAMM at LIVEX 2026. Investors can find government land and built assets, register interest, bid and sign contracts in one system, with AI matching and standardised contract and land-pricing terms.",
-      "source": "Gulf News",
-      "url": "https://gulfnews.com/uae/abu-dhabi/want-to-invest-in-abu-dhabis-government-land-now-theres-an-app-for-that-1.500694505"
-    },
-    {
-      "date": "2026-09-30",
-      "category": "Development",
-      "region": "Abu Dhabi",
-      "title": "Aldar and Arada agree Dh15bn partnership as Arada enters Abu Dhabi",
-      "summary": "Aldar and Sharjah-based Arada agreed projects with a combined value of about Dh15bn ($4bn). A joint venture will masterplan a mixed-use community of up to 1.5m sq m at Seih Sdeirah on the Abu Dhabi–Dubai border, and Arada is buying three Yas Island plots totalling more than 27,500 sq m.",
-      "source": "The National",
-      "url": "https://www.thenationalnews.com/business/property/2026/09/30/aldar-and-arada-sign-dh15bn-partnership-for-new-developments-in-abu-dhabi/"
-    },
-    {
-      "date": "2026-09-30",
-      "category": "Development",
-      "region": "Abu Dhabi",
-      "title": "TARAF and Mubadala sign MoU for 5.4m sq ft waterfront scheme on Al Reem Island",
-      "summary": "Yas Holding's TARAF signed an MoU with Mubadala at LIVEX 2026 to assess a mixed-use waterfront development across 10 plots on Al Reem Island. The plan covers about 655,000 sq ft of land and 5.4m sq ft of GFA for apartments, offices, retail and dining. No value or timeline was disclosed.",
-      "source": "Mubadala",
-      "url": "https://www.mubadala.com/en/news/taraf-signs-mou-with-mubadala-to-explore-major-mixed-use-waterfront-development-on-al-reem-island"
-    },
-    {
-      "date": "2026-09-30",
-      "category": "Market data",
-      "region": "Dubai",
-      "title": "Only 6% of Dubai off-plan projects have cut prices by 5% or more since February",
-      "summary": "fäm Properties analysis finds 44 of 717 off-plan projects launched since July 2023 have cut prices by 5% or more since February, and just 28 sell below launch price. Developer apartment sales fell 6% to 62,147 in the first eight months of 2026, while studio sales rose 26%.",
-      "source": "Khaleej Times",
-      "url": "https://www.khaleejtimes.com/business/dubai-developers-hold-off-plan-pricing-as-only-6-projects-cut-prices-by-5-or-more-since-february"
-    },
-    {
-      "date": "2026-09-28",
-      "category": "Investment",
-      "region": "Abu Dhabi",
-      "title": "JD.com property arm to build 150,000 sq m logistics hub at KEZAD Abu Dhabi",
-      "summary": "Jingdong Property, JD.com's infrastructure arm, will develop a 150,000 sq m automated logistics complex at KEZAD Al Ma'mourah with Khalifa Economic Zones Abu Dhabi. Completion is expected in 2028, creating about 1,000 direct jobs. The investment value was not disclosed.",
-      "source": "The National",
-      "url": "https://www.thenationalnews.com/business/property/2026/09/28/jdcoms-new-logistics-hub-at-abu-dhabis-kezad-to-create-1000-jobs/"
-    },
-    {
-      "date": "2026-09-28",
-      "category": "Investment",
-      "region": "Dubai",
-      "title": "Sobha Realty commits $600m to build 700 homes in Texas over five years",
-      "summary": "Dubai-based Sobha Realty will invest $600m to build about 700 single-family homes on 260 acres in Celina and Frisco, north of Dallas, priced $1m–$1.5m. A first phase of 34 homes starts sales next year, funded by Bank7 and CCB loans plus equity. Houston, Austin, Nashville, Phoenix and Australia are next.",
-      "source": "The National",
-      "url": "https://www.thenationalnews.com/business/property/2026/09/28/dubais-sobha-realty-eyes-600m-us-housing-push-and-targets-national-expansion/"
-    },
-    {
-      "date": "2026-09-27",
-      "category": "Market data",
-      "region": "Dubai",
-      "title": "Dubai logs 335 home sales above $10m in first eight months; Palm Jumeirah leads",
-      "summary": "fäm Properties' analysis of DLD data shows 206 villa sales worth Dh11.7bn and 129 apartment sales worth Dh8.67bn at or above Dh36.7m in Jan–Aug 2026. Palm Jumeirah led apartments (35 deals, Dh62.2m average); the top villa sale was Dh350m at La Mer and the top apartment Dh422m at Aman Residences.",
-      "source": "Khaleej Times",
-      "url": "https://www.khaleejtimes.com/business/dubia-records-335-homes-deals-of-10-million-in-8-months-palm-jumeirah-leads"
     }
   ]
 }

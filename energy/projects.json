@@ -1,6 +1,40 @@
 {
-  "updated": "2026-11-02",
+  "updated": "2026-11-09",
   "projects": [
+    {
+      "name": "Ruwais Diyab Unconventional Gas Development (Phase 1)",
+      "operator": "ADNOC Onshore (ADNOC)",
+      "sector": "Upstream gas",
+      "location": "Ruwais Diyab unconventional gas concession, onshore western Abu Dhabi",
+      "value_usd_bn": 1.7,
+      "value_note": "$1.704bn (AED6.26bn) including $310m of optional items, per Jereh's 4 Nov 2026 Shenzhen Stock Exchange filing as reported by SaudiGulf Projects; ADNOC has not disclosed a contract value",
+      "scope": "ADNOC took FID at ADIPEC on 2 November 2026 on its first large-scale unconventional gas development, delivered under a design-build-operate (DBO) model. Phase 1 targets 345 million cubic feet per day of raw gas from 2029 over a 25-year life, with potential to scale to 1 bcf/d. The DBO scope covers wellsite facilities, a central processing facility, gas gathering and product export pipelines, utilities and treatment of raw gas, liquids, produced water and sulphur, with a new pipeline tying the processed gas into the UAE network. Jereh's letter of award covers a 29-month build and 60 months of operation with two optional five-year extensions; formal contracts are due within 90 days.",
+      "contractors": [
+        {
+          "name": "Jereh Oil & Gas Engineering Corporation – Abu Dhabi (Yantai Jereh)",
+          "role": "Design-build-operate contractor, full field development (letter of award, Nov 2026)"
+        }
+      ],
+      "awarded": "2026-11",
+      "start_up": "2029",
+      "duration_years": 3,
+      "status": "Awarded",
+      "why_it_matters": "Marks the start of commercial unconventional gas production in the UAE and a new DBO contracting model for ADNOC, with a Chinese contractor taking the whole scope. Domestic unconventional supply frees conventional gas for Ruwais LNG exports and supports gas self-sufficiency; watch for Phase 2 scaling toward 1 bcf/d and for drilling and well-services packages.",
+      "sources": [
+        {
+          "title": "Oil & Gas Journal — ADIPEC 2026: ADNOC takes FID on Ruwais Diyab unconventional gas development (2 Nov 2026)",
+          "url": "https://www.ogj.com/exploration-development/news/55416035/adipec-2026-adnoc-takes-fid-on-ruwais-diyab-unconventional-gas-development"
+        },
+        {
+          "title": "MEED — Adnoc awards contract for Ruwais Diyab unconventional gas (3 Nov 2026)",
+          "url": "https://www.meed.com/adnoc-awards-contract-for-ruwais-diyab-unconventional-gas"
+        },
+        {
+          "title": "SaudiGulf Projects — Jereh receives ADNOC Onshore awards worth about $2.7bn including Ruwais Diyab (5 Nov 2026)",
+          "url": "https://www.saudigulfprojects.com/2026/11/jereh-adnoc-onshore-contracts-2-7-billion-ruwais-diyab/"
+        }
+      ]
+    },
     {
       "name": "Umm Shaif Gas Cap Development",
       "operator": "ADNOC Offshore",
@@ -491,8 +525,8 @@
       "sector": "Upstream oil",
       "location": "Bab, Al-Nouf, Rumaitha and Shanayel fields, onshore Abu Dhabi",
       "value_usd_bn": 1.2,
-      "value_note": "Est. $1.2bn programme budget per MEED sources; individual contract values not disclosed",
-      "scope": "18 EPC packages to tie in new oil-producing, water-injection and WAG wells across the Bab asset (packages 1-8 and 17) and the North East Bab fields of Al-Nouf, Rumaitha and Shanayel (packages 9-15 and 18), plus digitalisation of existing wells at Bab and Bu Hasa (package 16). Work covers residual engineering, procurement, site surveys, construction of mini-pads, well bays, clusters, manifolds and common facilities, testing and commissioning support, under ADNOC's Accelerated Integrated Programme 5. Six bidders submitted best offers in May 2026; MEED reported on 27 October 2026 that Robt Stone Middle East and Jereh Group have been notified of selection, with formal kick-off pending.",
+      "value_note": "Est. $1.2bn programme budget per MEED sources; Jereh's share disclosed at $599.7m (AED2.2bn) in its 4 Nov 2026 stock exchange filing; Robt Stone value not disclosed",
+      "scope": "18 EPC packages to tie in new oil-producing, water-injection and WAG wells across the Bab asset (packages 1-8 and 17) and the North East Bab fields of Al-Nouf, Rumaitha and Shanayel (packages 9-15 and 18), plus digitalisation of existing wells at Bab and Bu Hasa (package 16). Work covers residual engineering, procurement, site surveys, construction of mini-pads, well bays, clusters, manifolds and common facilities, testing and commissioning support, under ADNOC's Accelerated Integrated Programme 5. Six bidders submitted best offers in May 2026; MEED reported on 27 October 2026 that Robt Stone Middle East and Jereh Group have been notified of selection, with formal kick-off pending. Jereh's 4 November 2026 filing confirms a 60-month call-off framework starting 11 November 2026 under which ADNOC Onshore issues work orders in batches for tying in new oil producers, modifying surface facilities at existing producers, supporting water-supply, injection, disposal and WAG wells, and digitalising selected wells.",
       "contractors": [
         {
           "name": "Robt Stone Middle East",
@@ -500,7 +534,7 @@
         },
         {
           "name": "Jereh Group",
-          "role": "Selected EPC contractor (per MEED industry sources; packages not disclosed)"
+          "role": "Framework (call-off) contractor, $599.7m, 60 months from Nov 2026 (per Jereh filing)"
         }
       ],
       "awarded": "2026-10",
@@ -516,6 +550,36 @@
         {
           "title": "MEED - Contractors submit best offers for major Adnoc Onshore project (20 May 2026)",
           "url": "https://guest.meed.com/contractors-submit-best-offers-for-major-adnoc-onshore-project/"
+        },
+        {
+          "title": "SaudiGulf Projects — Jereh receives ADNOC Onshore awards worth about $2.7bn (5 Nov 2026)",
+          "url": "https://www.saudigulfprojects.com/2026/11/jereh-adnoc-onshore-contracts-2-7-billion-ruwais-diyab/"
+        }
+      ]
+    },
+    {
+      "name": "Bu Hasa, Bida Al Qemzan and Huwaila Wellhead Facilities and Flowlines Framework",
+      "operator": "ADNOC Onshore",
+      "sector": "Upstream oil",
+      "location": "Bu Hasa, Bida Al Qemzan and Huwaila fields, onshore Abu Dhabi",
+      "value_usd_bn": 0.393,
+      "value_note": "$392.8m (AED1.44bn) including $174m of optional items, per Jereh's 4 Nov 2026 Shenzhen Stock Exchange filing; ADNOC has not disclosed a value",
+      "scope": "A 36-month call-off framework, extendable by up to 24 months, for wellhead surface facilities and gathering flowlines connecting new wells to the existing production network across the Bu Hasa, Bida Al Qemzan and Huwaila fields, including design, fabrication and installation of production well module skids, gas-lift skids, skid-mounted wellhead control panels and solar power units. Work starts 14 days after the letter of award takes effect.",
+      "contractors": [
+        {
+          "name": "Jereh Oil & Gas Engineering Corporation – Abu Dhabi (Yantai Jereh)",
+          "role": "Framework contractor, wellhead facilities and flowlines (letter of award, Nov 2026)"
+        }
+      ],
+      "awarded": "2026-11",
+      "start_up": null,
+      "duration_years": null,
+      "status": "Awarded",
+      "why_it_matters": "Together with the Bab One Tie-In framework and Ruwais Diyab, this gives Jereh roughly $2.7bn of new ADNOC Onshore work in a single week, confirming the shift of brownfield hook-up work to Chinese contractors and ADNOC's preference for multi-year call-off frameworks to speed well connections toward the 5 million bpd target.",
+      "sources": [
+        {
+          "title": "SaudiGulf Projects — Jereh receives ADNOC Onshore awards worth about $2.7bn (5 Nov 2026)",
+          "url": "https://www.saudigulfprojects.com/2026/11/jereh-adnoc-onshore-contracts-2-7-billion-ruwais-diyab/"
         }
       ]
     },
@@ -850,8 +914,8 @@
       "sector": "CCUS & low-carbon",
       "location": "TA'ZIZ Derivatives Park, Ruwais",
       "value_usd_bn": null,
-      "value_note": "EPC value not disclosed",
-      "scope": "A 1 mtpa (3,000 t/d) low-carbon ammonia plant on a 10.8 ha site, targeting marine fuel and export ammonia markets with CO2 captured for storage; reported as approaching completion in May 2026.",
+      "value_note": "EPC value not disclosed; $460m-plus (Dh1.69bn) six-year project financing closed in November 2026",
+      "scope": "A 1 mtpa (3,000 t/d) low-carbon ammonia plant on a 10.8 ha site, targeting marine fuel and export ammonia markets with CO2 captured for storage; reported as approaching completion in May 2026. On 4 November 2026 TA'ZIZ closed an oversubscribed six-year term facility of more than $460m with seven banks from China, Kuwait, Spain and Singapore, with SMBC as financial adviser; the Tecnimont EPC was reported more than 90% complete.",
       "contractors": [
         {
           "name": "Tecnimont (MAIRE)",
@@ -879,6 +943,40 @@
         {
           "title": "The National, 15 May 2026",
           "url": "https://www.thenationalnews.com/business/energy/2026/05/15/taziz-says-phase-one-of-chemicals-projects-on-track-despite-iran-war-uncertainty/"
+        },
+        {
+          "title": "Khaleej Times — Ta'ziz secures $1.39 billion financing for Ruwais ammonia and terminal projects (4 Nov 2026)",
+          "url": "https://www.khaleejtimes.com/business/taziz-secures-139-billion-financing-for-ruwais-ammonia-and-terminal-projects"
+        }
+      ]
+    },
+    {
+      "name": "TA'ZIZ Chemicals Terminal (Ruwais)",
+      "operator": "TA'ZIZ (ADNOC/ADQ) with Advario Star Energy",
+      "sector": "Midstream & storage",
+      "location": "Al Ruwais Industrial City, Abu Dhabi",
+      "value_usd_bn": null,
+      "value_note": "EPC value not disclosed; project financing of more than $928m (Dh3.41bn), including $225m Islamic tranche, closed November 2026",
+      "scope": "Common-user liquid chemicals import/export terminal and storage serving the TA'ZIZ Industrial Chemicals Zone, including the methanol and low-carbon ammonia plants, developed as a joint venture with Advario Star Energy. Rotary Engineering's EPC was reported about 70% complete in November 2026, when a long-term non-recourse financing with nine banks was closed with MUFG as financial adviser.",
+      "contractors": [
+        {
+          "name": "Rotary Engineering",
+          "role": "EPC (about 70% complete, Nov 2026)"
+        },
+        {
+          "name": "Advario Star Energy",
+          "role": "Joint-venture partner and terminal operator"
+        }
+      ],
+      "awarded": null,
+      "start_up": null,
+      "duration_years": null,
+      "status": "Under construction",
+      "why_it_matters": "The export gateway for every TA'ZIZ derivatives plant: methanol and ammonia volumes cannot reach market without it, so its 2027 readiness is on the critical path for the Ruwais chemicals build-out. The oversubscribed financing shows bank appetite for Abu Dhabi industrial infrastructure despite the Hormuz disruption.",
+      "sources": [
+        {
+          "title": "Khaleej Times — Ta'ziz secures $1.39 billion financing for Ruwais ammonia and terminal projects (4 Nov 2026)",
+          "url": "https://www.khaleejtimes.com/business/taziz-secures-139-billion-financing-for-ruwais-ammonia-and-terminal-projects"
         }
       ]
     },
@@ -927,7 +1025,7 @@
       "location": "Al Ruwais Industrial City, Abu Dhabi",
       "value_usd_bn": null,
       "value_note": "EU2 EPC value not yet disclosed; FEED complete, EPC award planned in 2026",
-      "scope": "Upgrade of the second ethane cracker to add around 230,000 t/y of olefins and polyolefins by end-2028, alongside expansion of the PE4 and PE5 units from 540,000 to 700,000 t/y each by Q1 2027.",
+      "scope": "Upgrade of the second ethane cracker to add around 230,000 t/y of olefins and polyolefins by end-2028, alongside expansion of the PE4 and PE5 units from 540,000 to 700,000 t/y each by Q1 2027. The National reported on 4 November 2026 that the Linde-led cracker expansion adds about 230,000 t/y of ethylene and that Borouge International raised its 2030 capacity target to 13.8 mtpa from 13.6 mtpa on rising UAE ethane supply.",
       "contractors": [
         {
           "name": "Linde Engineering",
@@ -955,6 +1053,10 @@
         {
           "title": "MEED, 14 May 2025",
           "url": "https://www.meed.com/rejlers-wins-engineering-contract-on-borouge-project"
+        },
+        {
+          "title": "The National — Borouge International raises 2030 annual target on rising UAE ethane production (4 Nov 2026)",
+          "url": "https://www.thenationalnews.com/business/2026/11/04/borouge-international-raises-2030-annual-target-on-rising-uae-ethane-production/"
         }
       ]
     },
