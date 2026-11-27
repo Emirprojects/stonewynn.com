@@ -9,6 +9,15 @@
 <meta property="og:image" content="assets/marina.jpg">
 <link rel="icon" href="assets/favicon.png" type="image/png">
 <title>Stonewynn Consulting | Real estate, corporate & project advisory, Dubai</title>
+<script>window.LANG="en";window.ROOT="";window.I18N={};
+window.__t=function(k,d){var v=I18N[k];return v==null?d:v};
+window.__m=function(g,v){return (I18N[g]&&I18N[g][v])||v};
+window.__f=function(s,o){return String(s).replace(/\{(\w+)\}/g,function(_,k){return o[k]})};
+window.__d=function(d,o){var p=String(d).split('-');if(LANG==='en'){var M=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],m=M[(+p[1]||1)-1];if(o.day)return (+p[2])+' '+m+(o.year?' '+p[0]:'');return m+' '+p[0]}
+ var L={ar:'ar-AE-u-nu-latn',zh:'zh-CN',ru:'ru-RU',ja:'ja-JP'}[LANG];return new Intl.DateTimeFormat(L,Object.assign({timeZone:'UTC'},o)).format(new Date(Date.UTC(+p[0],(+p[1]||1)-1,+p[2]||1)))};
+window.__money=I18N.money||function(v){return '$'+(v>=1?v.toFixed(v%1?1:0):(v*1000).toFixed(0))+(v>=1?'bn':'m')};
+window.__ov=function(b){if(LANG==='en')return Promise.resolve({});return fetch(ROOT+b+'.'+LANG+'.json?v='+Date.now()).then(function(r){return r.ok?r.json():{}}).catch(function(){return {}})};
+</script><link rel="alternate" hreflang="en" href="https://stonewynn.com/"><link rel="alternate" hreflang="ar" href="https://stonewynn.com/ar/"><link rel="alternate" hreflang="zh" href="https://stonewynn.com/zh/"><link rel="alternate" hreflang="ru" href="https://stonewynn.com/ru/"><link rel="alternate" hreflang="ja" href="https://stonewynn.com/ja/"><link rel="alternate" hreflang="x-default" href="https://stonewynn.com/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Archivo:wght@300;400;500;600&display=swap">
 <style>
@@ -290,6 +299,24 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
 footer img{height:38px;width:auto}
 footer nav{display:flex;gap:22px;flex-wrap:wrap;letter-spacing:.1em;text-transform:uppercase;font-size:11.5px}
 footer nav a:hover{color:var(--cream)}
+
+.lang{position:relative;margin-inline-start:18px}
+.lang>button{display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:600;letter-spacing:.08em;height:40px;padding:0 4px;opacity:.9}
+.lang>button svg{width:16px;height:16px}
+.lang>button .car{width:9px;height:9px;transition:transform .25s}
+.lang.open>button .car{transform:rotate(180deg)}
+.lang ul{list-style:none;margin:0;padding:8px 0;position:absolute;top:calc(100% + 8px);inset-inline-end:0;min-width:168px;background:#0F1829;border:1px solid rgba(214,190,146,.28);box-shadow:0 18px 40px rgba(0,0,0,.28);opacity:0;visibility:hidden;transform:translateY(-6px);transition:.22s;z-index:60}
+.lang.open ul{opacity:1;visibility:visible;transform:none}
+.lang li a{display:flex;justify-content:space-between;gap:18px;padding:10px 18px;font-size:14px;color:#F7F3EC;letter-spacing:0;text-transform:none;opacity:.82}
+.lang li a:hover,.lang li a[aria-current]{opacity:1;color:#D6BE92;background:rgba(214,190,146,.07)}
+.lang li a small{font-size:10.5px;letter-spacing:.14em;color:#B8996A;font-family:'Archivo',Arial,sans-serif}
+.menu .langs{display:flex;flex-wrap:wrap;gap:8px 10px;margin-top:22px;border:0}
+.menu .langs a{font-family:var(--sans);font-size:14px;border:1px solid rgba(214,190,146,.35);padding:8px 14px;letter-spacing:0}
+.menu .langs a[aria-current]{background:#B8996A;color:#0F1829;border-color:#B8996A}
+footer .langs{display:flex;gap:16px;flex-wrap:wrap;font-size:12.5px}
+footer .langs a{opacity:.7}footer .langs a:hover,footer .langs a[aria-current]{opacity:1;color:var(--gold-3,#D6BE92)}
+@media(max-width:960px){.lang{margin-inline-start:auto;margin-inline-end:6px}}
+.menu{justify-content:flex-start;padding-top:100px;padding-bottom:40px;overflow-y:auto}.menu a{font-size:clamp(22px,6.4vw,32px)}.menu .langs a{font-size:14px}
 </style>
 </head>
 <body>
@@ -305,12 +332,14 @@ footer nav a:hover{color:var(--cream)}
       <a href="#about">About</a><a href="#capabilities">Capabilities</a><a href="#services">Services</a><a href="#transactions">Transactions</a><a href="news/">News</a><a href="energy/">Energy</a>
     </nav>
     <a class="btn" href="#contact">Start a conversation <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+    <div class="lang" id="lang"><button type="button" aria-haspopup="true" aria-expanded="false" aria-label="Language"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 3.8 5.6 3.8 9s-1.2 6.4-3.8 9c-2.6-2.6-3.8-5.6-3.8-9S9.4 5.6 12 3z"/></svg><span>EN</span><svg class="car" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M1.5 3.5L5 7l3.5-3.5"/></svg></button><ul><li><a href="/" hreflang="en" lang="en" data-lang="en" aria-current="true">English<small>EN</small></a></li><li><a href="/ar/" hreflang="ar" lang="ar" data-lang="ar">العربية<small>AR</small></a></li><li><a href="/zh/" hreflang="zh" lang="zh" data-lang="zh">中文<small>中文</small></a></li><li><a href="/ru/" hreflang="ru" lang="ru" data-lang="ru">Русский<small>RU</small></a></li><li><a href="/ja/" hreflang="ja" lang="ja" data-lang="ja">日本語<small>日本語</small></a></li></ul></div>
     <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span></button>
   </div>
 </header>
 <div class="menu" id="menu">
   <a href="#about">About</a><a href="#capabilities">Capabilities</a><a href="#services">Specialist services</a><a href="#transactions">Transactions</a><a href="#approach">How we work</a><a href="news/">News</a><a href="energy/">Energy projects</a><a href="#contact">Contact</a>
   <a class="small" href="#contact">info@stonewynn.com · +971 4 250 6845</a>
+  <div class="langs"><a href="/" hreflang="en" lang="en" data-lang="en" aria-current="true">English</a><a href="/ar/" hreflang="ar" lang="ar" data-lang="ar">العربية</a><a href="/zh/" hreflang="zh" lang="zh" data-lang="zh">中文</a><a href="/ru/" hreflang="ru" lang="ru" data-lang="ru">Русский</a><a href="/ja/" hreflang="ja" lang="ja" data-lang="ja">日本語</a></div>
 </div>
 
 <main id="top">
@@ -541,7 +570,7 @@ footer nav a:hover{color:var(--cream)}
 <footer>
   <div class="wrap">
     <img src="assets/logo_gold.png" alt="Stonewynn Consulting">
-    <nav aria-label="Footer"><a href="#about">About</a><a href="#capabilities">Capabilities</a><a href="#services">Services</a><a href="news/">News</a><a href="energy/">Energy</a><a href="#contact">Contact</a></nav>
+    <nav aria-label="Footer"><a href="#about">About</a><a href="#capabilities">Capabilities</a><a href="#services">Services</a><a href="news/">News</a><a href="energy/">Energy</a><a href="#contact">Contact</a></nav><div class="langs"><a href="/" hreflang="en" lang="en" data-lang="en" aria-current="true">English</a><a href="/ar/" hreflang="ar" lang="ar" data-lang="ar">العربية</a><a href="/zh/" hreflang="zh" lang="zh" data-lang="zh">中文</a><a href="/ru/" hreflang="ru" lang="ru" data-lang="ru">Русский</a><a href="/ja/" hreflang="ja" lang="ja" data-lang="ja">日本語</a></div>
     <span>© <span id="yr"></span> Stonewynn Consulting · Dubai, UAE</span>
   </div>
 </footer>
@@ -552,7 +581,7 @@ footer nav a:hover{color:var(--cream)}
 
   /* hero slideshow */
   var slides=[].slice.call(document.querySelectorAll('.hero .slides img')),dots=[].slice.call(document.querySelectorAll('#dots button')),cap=document.getElementById('heroCap');
-  var caps=['Waterfront and mixed-use development strategy','Corporate strategy and business performance','Technology, analytics and future-ready assets'];
+  var caps=['Waterfront and mixed-use development strategy','Corporate strategy and business performance','Technology, analytics and future-ready assets'];caps=__t('caps',caps);
   var cur=0,timer;
   function go(i){cur=i%slides.length;slides.forEach(function(s,j){s.classList.toggle('on',j===cur)});dots.forEach(function(d,j){d.classList.remove('on');void d.offsetWidth;if(j===cur)d.classList.add('on')});cap.textContent=caps[cur];clearTimeout(timer);if(!reduce)timer=setTimeout(function(){go(cur+1)},9000)}
   dots.forEach(function(d,i){d.addEventListener('click',function(){go(i)})});
@@ -579,6 +608,7 @@ footer nav a:hover{color:var(--cream)}
     {t:"Facilities Resources Planning",c:"Project delivery",s:"Resources aligned with operating requirements",img:"boardroom",items:["Facilities needs and resource requirement assessment","Staffing, space and service capacity planning","Operating readiness and lifecycle resource planning"],out:"Resource plans aligned with facilities needs and operating requirements."},
     {t:"Business Brokerage",c:"Transactions & value",s:"Introductions and coordination for business sales",img:"desk",items:["Buyer and seller identification and introductions","Opportunity presentation and initial commercial discussions","Due diligence coordination and transaction follow-up"],out:"Structured coordination between buyers, sellers and their advisers."}
   ];
+  services=services.map(function(s,i){var o=(I18N.services||[])[i];return o?Object.assign({},s,o):s});
   var list=document.getElementById('svcList'),sel=document.getElementById('svcSelect'),body=document.getElementById('svcBody'),img=document.getElementById('svcImg'),catEl=document.getElementById('svcCat'),sv=0,filter='all';
   function pad(n){return (n<10?'0':'')+n}
   services.forEach(function(s,i){
@@ -593,16 +623,16 @@ footer nav a:hover{color:var(--cream)}
     sv=i;var s=services[sv];
     [].forEach.call(list.children,function(b,j){b.setAttribute('aria-selected',j===sv?'true':'false')});
     sel.value=sv;
-    img.style.opacity=0;setTimeout(function(){img.src='assets/'+s.img+'.jpg';img.onload=function(){img.style.opacity=1}},160);
-    catEl.textContent=s.c;
+    img.style.opacity=0;setTimeout(function(){img.src=ROOT+'assets/'+s.img+'.jpg';img.onload=function(){img.style.opacity=1}},160);
+    catEl.textContent=__m('cats',s.c);
     body.style.animation='none';void body.offsetWidth;body.style.animation='';
     var vis=visible(),pos=vis.indexOf(sv);
-    body.innerHTML='<p class="eyebrow">Specialist service '+pad(sv+1)+' of 13</p><h3>'+s.t+'</h3><p class="sub">'+s.s+'</p><ol>'+s.items.map(function(it,k){return '<li><span class="num">'+pad(k+1)+'</span><span>'+it+'</span></li>'}).join('')+'</ol><p class="out">'+s.out+'</p><div class="svc-nav"><button type="button" id="svcPrev">&larr; Previous</button><span>'+(pos+1)+' / '+vis.length+'</span><button type="button" id="svcNext">Next &rarr;</button></div>';
+    body.innerHTML='<p class="eyebrow">'+__f(__t('svcOf','Specialist service {n} of {m}'),{n:pad(sv+1),m:13})+'</p><h3>'+s.t+'</h3><p class="sub">'+s.s+'</p><ol>'+s.items.map(function(it,k){return '<li><span class="num">'+pad(k+1)+'</span><span>'+it+'</span></li>'}).join('')+'</ol><p class="out">'+s.out+'</p><div class="svc-nav"><button type="button" id="svcPrev">'+__t('prev','&larr; Previous')+'</button><span>'+(pos+1)+' / '+vis.length+'</span><button type="button" id="svcNext">'+__t('next','Next &rarr;')+'</button></div>';
     document.getElementById('svcPrev').onclick=function(){show(vis[(pos-1+vis.length)%vis.length])};
     document.getElementById('svcNext').onclick=function(){show(vis[(pos+1)%vis.length])};
   }
   document.querySelectorAll('#filters button').forEach(function(b){b.addEventListener('click',function(){
-    filter=b.textContent.trim()==='All services'?'all':b.textContent.trim();
+    filter=b.dataset.f||'all';
     document.querySelectorAll('#filters button').forEach(function(x){x.setAttribute('aria-pressed',x===b)});
     [].forEach.call(list.children,function(el){el.classList.toggle('dim',filter!=='all'&&el.dataset.c!==filter)});
     [].forEach.call(sel.options,function(o){o.hidden=filter!=='all'&&services[o.value].c!==filter});
@@ -640,7 +670,7 @@ footer nav a:hover{color:var(--cream)}
 
   /* copy */
   document.querySelectorAll('.copy').forEach(function(b){b.addEventListener('click',function(){
-    var v=b.getAttribute('data-copy');var done=function(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy'},1600)};
+    var v=b.getAttribute('data-copy');var done=function(){b.textContent=__t('copied','Copied');setTimeout(function(){b.textContent=__t('copy','Copy')},1600)};
     function sel2(){var r=document.createRange();r.selectNodeContents(b.previousElementSibling);var s=getSelection();s.removeAllRanges();s.addRange(r)}
     if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(v).then(done,sel2)}else sel2();
   })});
@@ -659,14 +689,16 @@ footer nav a:hover{color:var(--cream)}
 
   /* latest news strip */
   var nr=document.getElementById('newsrow');
-  if(nr){fetch('news/news.json?v='+Date.now()).then(function(r){return r.json()}).then(function(d){
+  if(nr){Promise.all([fetch(ROOT+'news/news.json?v='+Date.now()).then(function(r){return r.json()}),__ov('news/news')]).then(function(a){var d=a[0],ov=a[1];
     var m=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
     function e(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
-    nr.innerHTML=(d.items||[]).slice(0,3).map(function(i){var p=i.date.split('-');return '<a href="'+e(i.url)+'" target="_blank" rel="noopener"><span class="k"><span>'+e(i.category)+' · '+e(i.region)+'</span><time>'+(+p[2])+' '+m[+p[1]-1]+'</time></span><h3>'+e(i.title)+'</h3><p>'+e(i.summary).slice(0,150)+'…</p></a>'}).join('');
+    nr.innerHTML=(d.items||[]).slice(0,3).map(function(i){i=Object.assign({},i,ov[i.url]||{});var p=i.date.split('-');return '<a href="'+e(i.url)+'" target="_blank" rel="noopener"><span class="k"><span>'+e(__m('newsCats',i.category))+' · '+e(__m('regions',i.region))+'</span><time>'+__d(i.date,{day:'numeric',month:'short'})+'</time></span><h3>'+e(i.title)+'</h3><p>'+e(i.summary).slice(0,__t('clip',150))+'…</p></a>'}).join('');
   }).catch(function(){nr.style.display='none'})}
   document.getElementById('yr').textContent=new Date().getFullYear();
 })();
 </script>
 
+<script>(function(){var l=document.getElementById('lang');if(!l)return;var b=l.querySelector('button');b.addEventListener('click',function(e){e.stopPropagation();var o=l.classList.toggle('open');b.setAttribute('aria-expanded',o)});document.addEventListener('click',function(){l.classList.remove('open');b.setAttribute('aria-expanded','false')});document.addEventListener('keydown',function(e){if(e.key==='Escape'){l.classList.remove('open');b.setAttribute('aria-expanded','false')}});
+document.querySelectorAll('[data-lang]').forEach(function(a){a.addEventListener('click',function(){try{localStorage.setItem('sw-lang',a.getAttribute('data-lang'))}catch(e){}})})})();</script>
 </body>
 </html>

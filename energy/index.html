@@ -6,6 +6,15 @@
 <title>UAE Energy Projects Tracker | Stonewynn Consulting</title>
 <meta name="description" content="Stonewynn Consulting's tracker of upcoming and under-construction oil, gas, LNG, petrochemical and low-carbon projects in the UAE: value, scope, contractors, award dates and completion timelines.">
 <link rel="icon" href="../assets/favicon.png" type="image/png">
+<script>window.LANG="en";window.ROOT="../";window.I18N={};
+window.__t=function(k,d){var v=I18N[k];return v==null?d:v};
+window.__m=function(g,v){return (I18N[g]&&I18N[g][v])||v};
+window.__f=function(s,o){return String(s).replace(/\{(\w+)\}/g,function(_,k){return o[k]})};
+window.__d=function(d,o){var p=String(d).split('-');if(LANG==='en'){var M=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],m=M[(+p[1]||1)-1];if(o.day)return (+p[2])+' '+m+(o.year?' '+p[0]:'');return m+' '+p[0]}
+ var L={ar:'ar-AE-u-nu-latn',zh:'zh-CN',ru:'ru-RU',ja:'ja-JP'}[LANG];return new Intl.DateTimeFormat(L,Object.assign({timeZone:'UTC'},o)).format(new Date(Date.UTC(+p[0],(+p[1]||1)-1,+p[2]||1)))};
+window.__money=I18N.money||function(v){return '$'+(v>=1?v.toFixed(v%1?1:0):(v*1000).toFixed(0))+(v>=1?'bn':'m')};
+window.__ov=function(b){if(LANG==='en')return Promise.resolve({});return fetch(ROOT+b+'.'+LANG+'.json?v='+Date.now()).then(function(r){return r.ok?r.json():{}}).catch(function(){return {}})};
+</script><link rel="alternate" hreflang="en" href="https://stonewynn.com/energy/"><link rel="alternate" hreflang="ar" href="https://stonewynn.com/ar/energy/"><link rel="alternate" hreflang="zh" href="https://stonewynn.com/zh/energy/"><link rel="alternate" hreflang="ru" href="https://stonewynn.com/ru/energy/"><link rel="alternate" hreflang="ja" href="https://stonewynn.com/ja/energy/"><link rel="alternate" hreflang="x-default" href="https://stonewynn.com/energy/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Archivo:wght@300;400;500;600&display=swap">
 <style>
@@ -75,6 +84,24 @@ main{padding-block:clamp(48px,6vw,80px)}
 @media(max-width:640px){.proj .head{grid-template-columns:1fr 32px;gap:10px}.proj .head .cell{display:none}.proj[open] .body{grid-template-columns:1fr}.kv{grid-template-columns:1fr}}
 .cta{background:var(--navy);color:var(--cream);padding:clamp(56px,7vw,90px) 0}.cta .wrap{display:flex;justify-content:space-between;align-items:center;gap:30px;flex-wrap:wrap}.cta h2{font-size:clamp(30px,3.6vw,48px)}.cta .btn{border-color:rgba(247,243,236,.55)}
 footer{background:var(--navy-deep);color:rgba(247,243,236,.7);border-top:1px solid var(--line-navy);padding-block:36px;font-size:13px}footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}footer img{height:38px;width:auto}footer nav{display:flex;gap:22px;flex-wrap:wrap;letter-spacing:.1em;text-transform:uppercase;font-size:11.5px}footer nav a:hover{color:var(--cream)}
+
+.lang{position:relative;margin-inline-start:18px}
+.lang>button{display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:600;letter-spacing:.08em;height:40px;padding:0 4px;opacity:.9}
+.lang>button svg{width:16px;height:16px}
+.lang>button .car{width:9px;height:9px;transition:transform .25s}
+.lang.open>button .car{transform:rotate(180deg)}
+.lang ul{list-style:none;margin:0;padding:8px 0;position:absolute;top:calc(100% + 8px);inset-inline-end:0;min-width:168px;background:#0F1829;border:1px solid rgba(214,190,146,.28);box-shadow:0 18px 40px rgba(0,0,0,.28);opacity:0;visibility:hidden;transform:translateY(-6px);transition:.22s;z-index:60}
+.lang.open ul{opacity:1;visibility:visible;transform:none}
+.lang li a{display:flex;justify-content:space-between;gap:18px;padding:10px 18px;font-size:14px;color:#F7F3EC;letter-spacing:0;text-transform:none;opacity:.82}
+.lang li a:hover,.lang li a[aria-current]{opacity:1;color:#D6BE92;background:rgba(214,190,146,.07)}
+.lang li a small{font-size:10.5px;letter-spacing:.14em;color:#B8996A;font-family:'Archivo',Arial,sans-serif}
+.menu .langs{display:flex;flex-wrap:wrap;gap:8px 10px;margin-top:22px;border:0}
+.menu .langs a{font-family:var(--sans);font-size:14px;border:1px solid rgba(214,190,146,.35);padding:8px 14px;letter-spacing:0}
+.menu .langs a[aria-current]{background:#B8996A;color:#0F1829;border-color:#B8996A}
+footer .langs{display:flex;gap:16px;flex-wrap:wrap;font-size:12.5px}
+footer .langs a{opacity:.7}footer .langs a:hover,footer .langs a[aria-current]{opacity:1;color:var(--gold-3,#D6BE92)}
+@media(max-width:960px){.lang{margin-inline-start:auto;margin-inline-end:6px}}
+.menu{justify-content:flex-start;padding-top:100px;padding-bottom:40px;overflow-y:auto}.menu a{font-size:clamp(22px,6.4vw,32px)}.menu .langs a{font-size:14px}
 </style>
 </head>
 <body>
@@ -85,11 +112,13 @@ footer{background:var(--navy-deep);color:rgba(247,243,236,.7);border-top:1px sol
       <a href="../#about">About</a><a href="../#capabilities">Capabilities</a><a href="../#services">Services</a><a href="../news/">News</a><a href="./" class="active">Energy</a>
     </nav>
     <a class="btn" href="../#contact">Start a conversation</a>
+    <div class="lang" id="lang"><button type="button" aria-haspopup="true" aria-expanded="false" aria-label="Language"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 3.8 5.6 3.8 9s-1.2 6.4-3.8 9c-2.6-2.6-3.8-5.6-3.8-9S9.4 5.6 12 3z"/></svg><span>EN</span><svg class="car" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M1.5 3.5L5 7l3.5-3.5"/></svg></button><ul><li><a href="/energy/" hreflang="en" lang="en" data-lang="en" aria-current="true">English<small>EN</small></a></li><li><a href="/ar/energy/" hreflang="ar" lang="ar" data-lang="ar">العربية<small>AR</small></a></li><li><a href="/zh/energy/" hreflang="zh" lang="zh" data-lang="zh">中文<small>中文</small></a></li><li><a href="/ru/energy/" hreflang="ru" lang="ru" data-lang="ru">Русский<small>RU</small></a></li><li><a href="/ja/energy/" hreflang="ja" lang="ja" data-lang="ja">日本語<small>日本語</small></a></li></ul></div>
     <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span></button>
   </div>
 </header>
 <div class="menu" id="menu">
   <a href="../#about">About</a><a href="../#capabilities">Capabilities</a><a href="../#services">Specialist services</a><a href="../news/">News</a><a href="./">Energy projects</a><a href="../#contact">Contact</a>
+  <div class="langs"><a href="/energy/" hreflang="en" lang="en" data-lang="en" aria-current="true">English</a><a href="/ar/energy/" hreflang="ar" lang="ar" data-lang="ar">العربية</a><a href="/zh/energy/" hreflang="zh" lang="zh" data-lang="zh">中文</a><a href="/ru/energy/" hreflang="ru" lang="ru" data-lang="ru">Русский</a><a href="/ja/energy/" hreflang="ja" lang="ja" data-lang="ja">日本語</a></div>
 </div>
 
 <section class="hero">
@@ -147,7 +176,7 @@ footer{background:var(--navy-deep);color:rgba(247,243,236,.7);border-top:1px sol
 <footer>
   <div class="wrap">
     <img src="../assets/logo_gold.png" alt="Stonewynn Consulting">
-    <nav aria-label="Footer"><a href="../#about">About</a><a href="../#services">Services</a><a href="../news/">News</a><a href="./">Energy</a><a href="../#contact">Contact</a></nav>
+    <nav aria-label="Footer"><a href="../#about">About</a><a href="../#services">Services</a><a href="../news/">News</a><a href="./">Energy</a><a href="../#contact">Contact</a></nav><div class="langs"><a href="/energy/" hreflang="en" lang="en" data-lang="en" aria-current="true">English</a><a href="/ar/energy/" hreflang="ar" lang="ar" data-lang="ar">العربية</a><a href="/zh/energy/" hreflang="zh" lang="zh" data-lang="zh">中文</a><a href="/ru/energy/" hreflang="ru" lang="ru" data-lang="ru">Русский</a><a href="/ja/energy/" hreflang="ja" lang="ja" data-lang="ja">日本語</a></div>
     <span>© <span id="yr"></span> Stonewynn Consulting · Dubai, UAE</span>
   </div>
 </footer>
@@ -157,31 +186,31 @@ footer{background:var(--navy-deep);color:rgba(247,243,236,.7);border-top:1px sol
   var list=document.getElementById('list'),count=document.getElementById('count'),stats=document.getElementById('stats'),items=[],fs='all',fst='all';
   var months=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
   function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
-  function fmtD(d){if(!d)return '—';var p=d.split('-');return p.length>1?months[+p[1]-1]+' '+p[0]:p[0]}
-  function money(v,n){if(v==null)return '<span style="font-size:14px;color:var(--stone)">Not disclosed</span>';var e=/est\./i.test(n||'')?'<span style="font-size:11px;color:var(--stone)"> est.</span>':'';return '$'+(v>=1?v.toFixed(v%1?1:0):(v*1000).toFixed(0))+(v>=1?'bn':'m')+e}
+  function fmtD(d){if(!d)return '—';var p=d.split('-');return p.length>1?__d(d,{month:'short',year:'numeric'}):p[0]}
+  function money(v,n){if(v==null)return '<span style="font-size:14px;color:var(--stone)">'+__t('nd','Not disclosed')+'</span>';var e=/est\./i.test(n||'')?'<span style="font-size:11px;color:var(--stone)"> '+__t('est','est.')+'</span>':'';return __money(v)+e}
   function render(){
     var L=items.filter(function(p){return (fs==='all'||p.sector===fs)&&(fst==='all'||p.status===fst)});
-    count.textContent=L.length+' of '+items.length+' projects';
-    if(!L.length){list.innerHTML='<div class="empty">No projects match these filters.</div>';return}
+    count.textContent=__f(__t('ofProjects','{n} of {m} projects'),{n:L.length,m:items.length});
+    if(!L.length){list.innerHTML='<div class="empty">'+__t('noProjects','No projects match these filters.')+'</div>';return}
     list.innerHTML=L.map(function(p,i){var sc=p.status.split(' ')[0];
       return '<details class="proj" style="animation-delay:'+(i*30)+'ms"><summary class="head" style="list-style:none;cursor:pointer">'+
         '<div><h3>'+esc(p.name)+'</h3><div class="sub">'+esc(p.operator)+' · '+esc(p.location)+'</div></div>'+
-        '<div class="cell"><small>Value</small><span class="val">'+money(p.value_usd_bn,p.value_note)+'</span></div>'+
-        '<div class="cell hide-m"><small>Sector</small>'+esc(p.sector)+'</div>'+
-        '<div class="cell hide-m"><small>Awarded → Start-up</small>'+fmtD(p.awarded)+' → '+esc(p.start_up||'TBC')+'</div>'+
-        '<div class="cell"><small>Status</small><span class="pill s-'+sc+'">'+esc(p.status)+'</span></div>'+
+        '<div class="cell"><small>'+__t('value','Value')+'</small><span class="val">'+money(p.value_usd_bn,p.value_note)+'</span></div>'+
+        '<div class="cell hide-m"><small>'+__t('sector','Sector')+'</small>'+esc(__m('sectors',p.sector))+'</div>'+
+        '<div class="cell hide-m"><small>'+__t('awSu','Awarded → Start-up')+'</small>'+fmtD(p.awarded)+' '+__t('arrow','→')+' '+esc(p.start_up||__t('tbc','TBC'))+'</div>'+
+        '<div class="cell"><small>'+__t('status','Status')+'</small><span class="pill s-'+sc+'">'+esc(__m('statuses',p.status))+'</span></div>'+
         '<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 9l6 6 6-6"/></svg></summary>'+
-        '<div class="body"><div><h4>Scope</h4><p>'+esc(p.scope)+'</p><div class="why">'+esc(p.why_it_matters)+'</div>'+
-        '<div class="src">Sources: '+(p.sources||[]).map(function(s){return '<a href="'+esc(s.url)+'" target="_blank" rel="noopener">'+esc(s.title)+'</a>'}).join(' · ')+'</div></div>'+
-        '<div><div class="kv"><div><small>Value</small>'+esc(p.value_note||'—')+'</div><div><small>Duration</small>'+(p.duration_years?p.duration_years+' years (award to start-up)':'Not yet defined')+'</div><div><small>Award</small>'+fmtD(p.awarded)+'</div><div><small>Expected start-up</small>'+esc(p.start_up||'To be confirmed')+'</div></div>'+
-        '<h4>Contractors &amp; partners</h4><table class="ctable">'+(p.contractors||[]).map(function(c){return '<tr><td>'+esc(c.name)+'</td><td>'+esc(c.role)+'</td></tr>'}).join('')+'</table></div></div></details>'}).join('');
+        '<div class="body"><div><h4>'+__t('scope','Scope')+'</h4><p>'+esc(p.scope)+'</p><div class="why">'+esc(p.why_it_matters)+'</div>'+
+        '<div class="src">'+__t('sources','Sources:')+' '+(p.sources||[]).map(function(s){return '<a href="'+esc(s.url)+'" target="_blank" rel="noopener">'+esc(s.title)+'</a>'}).join(' · ')+'</div></div>'+
+        '<div><div class="kv"><div><small>'+__t('value','Value')+'</small>'+esc(p.value_note||'—')+'</div><div><small>'+__t('duration','Duration')+'</small>'+(p.duration_years?__f(__t('yearsTxt','{n} years (award to start-up)'),{n:p.duration_years}):__t('notDefined','Not yet defined'))+'</div><div><small>'+__t('award','Award')+'</small>'+fmtD(p.awarded)+'</div><div><small>'+__t('expSu','Expected start-up')+'</small>'+esc(p.start_up||__t('tbcLong','To be confirmed'))+'</div></div>'+
+        '<h4>'+__t('contractors','Contractors &amp; partners')+'</h4><table class="ctable">'+(p.contractors||[]).map(function(c){return '<tr><td>'+esc(c.name)+'</td><td>'+esc(__m('roles',c.role))+'</td></tr>'}).join('')+'</table></div></div></details>'}).join('');
   }
-  fetch('projects.json?v='+Date.now()).then(function(r){return r.json()}).then(function(d){
-    items=d.projects||[];document.getElementById('updated').textContent=(function(x){var p=x.split('-');return (+p[2])+' '+months[+p[1]-1]+' '+p[0]})(d.updated);
+  Promise.all([fetch(ROOT+'energy/projects.json?v='+Date.now()).then(function(r){return r.json()}),__ov('energy/projects')]).then(function(a){var d=a[0],ov=a[1];I18N.roles=Object.assign({},I18N.roles||{},ov.__roles||{});
+    items=(d.projects||[]).map(function(p){return Object.assign({},p,ov[p.name]||{})});document.getElementById('updated').textContent=__d(d.updated,{day:'numeric',month:'short',year:'numeric'});
     var tot=items.reduce(function(a,p){return a+(p.value_usd_bn||0)},0),uc=items.filter(function(p){return p.status==='Under construction'}).length,aw=items.filter(function(p){return p.status==='Awarded'}).length,cs=new Set();items.forEach(function(p){(p.contractors||[]).forEach(function(c){c.name.split(/,|\//).forEach(function(n){cs.add(n.trim())})})});
-    stats.innerHTML='<div><b>$'+tot.toFixed(0)+'bn+</b><small>Disclosed project value</small></div><div><b>'+items.length+'</b><small>Projects tracked</small></div><div><b>'+uc+'</b><small>Under construction</small></div><div><b>'+aw+'</b><small>Awarded in 2026</small></div>';
+    stats.innerHTML='<div><b>'+__money(Math.round(tot))+'+</b><small>'+__t('stTotal','Disclosed project value')+'</small></div><div><b>'+items.length+'</b><small>'+__t('stTracked','Projects tracked')+'</small></div><div><b>'+uc+'</b><small>'+__t('stUC','Under construction')+'</small></div><div><b>'+aw+'</b><small>'+__t('stAw','Awarded in 2026')+'</small></div>';
     render();
-  }).catch(function(){list.innerHTML='<div class="empty">The tracker could not be loaded. Please try again shortly.</div>'});
+  }).catch(function(){list.innerHTML='<div class="empty">'+__t('energyErr','The tracker could not be loaded. Please try again shortly.')+'</div>'});
   function bind(id,set){document.querySelectorAll('#'+id+' button').forEach(function(b){b.addEventListener('click',function(){set(b.dataset.f);document.querySelectorAll('#'+id+' button').forEach(function(x){x.setAttribute('aria-pressed',x===b)});render()})})}
   bind('fSector',function(v){fs=v});bind('fStatus',function(v){fst=v});
   var nav=document.getElementById('nav');function onS(){nav.classList.toggle('scrolled',window.scrollY>40)}window.addEventListener('scroll',onS,{passive:true});onS();
@@ -189,5 +218,7 @@ footer{background:var(--navy-deep);color:rgba(247,243,236,.7);border-top:1px sol
   document.getElementById('yr').textContent=new Date().getFullYear();
 })();
 </script>
+<script>(function(){var l=document.getElementById('lang');if(!l)return;var b=l.querySelector('button');b.addEventListener('click',function(e){e.stopPropagation();var o=l.classList.toggle('open');b.setAttribute('aria-expanded',o)});document.addEventListener('click',function(){l.classList.remove('open');b.setAttribute('aria-expanded','false')});document.addEventListener('keydown',function(e){if(e.key==='Escape'){l.classList.remove('open');b.setAttribute('aria-expanded','false')}});
+document.querySelectorAll('[data-lang]').forEach(function(a){a.addEventListener('click',function(){try{localStorage.setItem('sw-lang',a.getAttribute('data-lang'))}catch(e){}})})})();</script>
 </body>
 </html>

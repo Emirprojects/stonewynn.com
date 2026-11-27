@@ -6,6 +6,15 @@
 <title>Market Intelligence | Stonewynn Consulting</title>
 <meta name="description" content="Curated news on investments, acquisitions, developments and landmark real estate projects across the UAE and the Middle East, selected by Stonewynn Consulting.">
 <link rel="icon" href="../assets/favicon.png" type="image/png">
+<script>window.LANG="en";window.ROOT="../";window.I18N={};
+window.__t=function(k,d){var v=I18N[k];return v==null?d:v};
+window.__m=function(g,v){return (I18N[g]&&I18N[g][v])||v};
+window.__f=function(s,o){return String(s).replace(/\{(\w+)\}/g,function(_,k){return o[k]})};
+window.__d=function(d,o){var p=String(d).split('-');if(LANG==='en'){var M=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],m=M[(+p[1]||1)-1];if(o.day)return (+p[2])+' '+m+(o.year?' '+p[0]:'');return m+' '+p[0]}
+ var L={ar:'ar-AE-u-nu-latn',zh:'zh-CN',ru:'ru-RU',ja:'ja-JP'}[LANG];return new Intl.DateTimeFormat(L,Object.assign({timeZone:'UTC'},o)).format(new Date(Date.UTC(+p[0],(+p[1]||1)-1,+p[2]||1)))};
+window.__money=I18N.money||function(v){return '$'+(v>=1?v.toFixed(v%1?1:0):(v*1000).toFixed(0))+(v>=1?'bn':'m')};
+window.__ov=function(b){if(LANG==='en')return Promise.resolve({});return fetch(ROOT+b+'.'+LANG+'.json?v='+Date.now()).then(function(r){return r.ok?r.json():{}}).catch(function(){return {}})};
+</script><link rel="alternate" hreflang="en" href="https://stonewynn.com/news/"><link rel="alternate" hreflang="ar" href="https://stonewynn.com/ar/news/"><link rel="alternate" hreflang="zh" href="https://stonewynn.com/zh/news/"><link rel="alternate" hreflang="ru" href="https://stonewynn.com/ru/news/"><link rel="alternate" hreflang="ja" href="https://stonewynn.com/ja/news/"><link rel="alternate" hreflang="x-default" href="https://stonewynn.com/news/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Archivo:wght@300;400;500;600&display=swap">
 <style>
@@ -60,6 +69,24 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
 footer nav{display:flex;gap:22px;flex-wrap:wrap;letter-spacing:.1em;text-transform:uppercase;font-size:11.5px}footer nav a:hover{color:var(--cream)}
 @media(max-width:960px){.grid{grid-template-columns:1fr 1fr}.card.lead{grid-column:span 2}}
 @media(max-width:600px){.grid{grid-template-columns:1fr}.card.lead{grid-column:span 1;padding:28px 26px}}
+
+.lang{position:relative;margin-inline-start:18px}
+.lang>button{display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:600;letter-spacing:.08em;height:40px;padding:0 4px;opacity:.9}
+.lang>button svg{width:16px;height:16px}
+.lang>button .car{width:9px;height:9px;transition:transform .25s}
+.lang.open>button .car{transform:rotate(180deg)}
+.lang ul{list-style:none;margin:0;padding:8px 0;position:absolute;top:calc(100% + 8px);inset-inline-end:0;min-width:168px;background:#0F1829;border:1px solid rgba(214,190,146,.28);box-shadow:0 18px 40px rgba(0,0,0,.28);opacity:0;visibility:hidden;transform:translateY(-6px);transition:.22s;z-index:60}
+.lang.open ul{opacity:1;visibility:visible;transform:none}
+.lang li a{display:flex;justify-content:space-between;gap:18px;padding:10px 18px;font-size:14px;color:#F7F3EC;letter-spacing:0;text-transform:none;opacity:.82}
+.lang li a:hover,.lang li a[aria-current]{opacity:1;color:#D6BE92;background:rgba(214,190,146,.07)}
+.lang li a small{font-size:10.5px;letter-spacing:.14em;color:#B8996A;font-family:'Archivo',Arial,sans-serif}
+.menu .langs{display:flex;flex-wrap:wrap;gap:8px 10px;margin-top:22px;border:0}
+.menu .langs a{font-family:var(--sans);font-size:14px;border:1px solid rgba(214,190,146,.35);padding:8px 14px;letter-spacing:0}
+.menu .langs a[aria-current]{background:#B8996A;color:#0F1829;border-color:#B8996A}
+footer .langs{display:flex;gap:16px;flex-wrap:wrap;font-size:12.5px}
+footer .langs a{opacity:.7}footer .langs a:hover,footer .langs a[aria-current]{opacity:1;color:var(--gold-3,#D6BE92)}
+@media(max-width:960px){.lang{margin-inline-start:auto;margin-inline-end:6px}}
+.menu{justify-content:flex-start;padding-top:100px;padding-bottom:40px;overflow-y:auto}.menu a{font-size:clamp(22px,6.4vw,32px)}.menu .langs a{font-size:14px}
 </style>
 </head>
 <body>
@@ -70,11 +97,13 @@ footer nav{display:flex;gap:22px;flex-wrap:wrap;letter-spacing:.1em;text-transfo
       <a href="../#about">About</a><a href="../#capabilities">Capabilities</a><a href="../#services">Services</a><a href="../#transactions">Transactions</a><a href="./" class="active">News</a><a href="../energy/">Energy</a>
     </nav>
     <a class="btn" href="../#contact">Start a conversation</a>
+    <div class="lang" id="lang"><button type="button" aria-haspopup="true" aria-expanded="false" aria-label="Language"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 3.8 5.6 3.8 9s-1.2 6.4-3.8 9c-2.6-2.6-3.8-5.6-3.8-9S9.4 5.6 12 3z"/></svg><span>EN</span><svg class="car" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M1.5 3.5L5 7l3.5-3.5"/></svg></button><ul><li><a href="/news/" hreflang="en" lang="en" data-lang="en" aria-current="true">English<small>EN</small></a></li><li><a href="/ar/news/" hreflang="ar" lang="ar" data-lang="ar">العربية<small>AR</small></a></li><li><a href="/zh/news/" hreflang="zh" lang="zh" data-lang="zh">中文<small>中文</small></a></li><li><a href="/ru/news/" hreflang="ru" lang="ru" data-lang="ru">Русский<small>RU</small></a></li><li><a href="/ja/news/" hreflang="ja" lang="ja" data-lang="ja">日本語<small>日本語</small></a></li></ul></div>
     <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span></button>
   </div>
 </header>
 <div class="menu" id="menu">
   <a href="../#about">About</a><a href="../#capabilities">Capabilities</a><a href="../#services">Specialist services</a><a href="../#transactions">Transactions</a><a href="./">News</a><a href="../energy/">Energy projects</a><a href="../#contact">Contact</a>
+  <div class="langs"><a href="/news/" hreflang="en" lang="en" data-lang="en" aria-current="true">English</a><a href="/ar/news/" hreflang="ar" lang="ar" data-lang="ar">العربية</a><a href="/zh/news/" hreflang="zh" lang="zh" data-lang="zh">中文</a><a href="/ru/news/" hreflang="ru" lang="ru" data-lang="ru">Русский</a><a href="/ja/news/" hreflang="ja" lang="ja" data-lang="ja">日本語</a></div>
 </div>
 
 <section class="hero">
@@ -116,7 +145,7 @@ footer nav{display:flex;gap:22px;flex-wrap:wrap;letter-spacing:.1em;text-transfo
 <footer>
   <div class="wrap">
     <img src="../assets/logo_gold.png" alt="Stonewynn Consulting">
-    <nav aria-label="Footer"><a href="../#about">About</a><a href="../#services">Services</a><a href="./">News</a><a href="../energy/">Energy</a><a href="../#contact">Contact</a></nav>
+    <nav aria-label="Footer"><a href="../#about">About</a><a href="../#services">Services</a><a href="./">News</a><a href="../energy/">Energy</a><a href="../#contact">Contact</a></nav><div class="langs"><a href="/news/" hreflang="en" lang="en" data-lang="en" aria-current="true">English</a><a href="/ar/news/" hreflang="ar" lang="ar" data-lang="ar">العربية</a><a href="/zh/news/" hreflang="zh" lang="zh" data-lang="zh">中文</a><a href="/ru/news/" hreflang="ru" lang="ru" data-lang="ru">Русский</a><a href="/ja/news/" hreflang="ja" lang="ja" data-lang="ja">日本語</a></div>
     <span>© <span id="yr"></span> Stonewynn Consulting · Dubai, UAE</span>
   </div>
 </footer>
@@ -125,25 +154,25 @@ footer nav{display:flex;gap:22px;flex-wrap:wrap;letter-spacing:.1em;text-transfo
 (function(){
   var grid=document.getElementById('grid'),count=document.getElementById('count'),filter='all',items=[];
   var months=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-  function fmt(d){var p=d.split('-');return (+p[2])+' '+months[+p[1]-1]+' '+p[0]}
+  function fmt(d){return __d(d,{day:'numeric',month:'short',year:'numeric'})}
   function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
   function render(){
     var list=items.filter(function(i){return filter==='all'||i.category===filter});
-    count.textContent=list.length+' '+(list.length===1?'story':'stories');
-    if(!list.length){grid.innerHTML='<div class="empty">No stories in this category yet.</div>';return}
+    count.textContent=__f(list.length===1?__t('story1','{n} story'):__t('storyN','{n} stories'),{n:list.length});
+    if(!list.length){grid.innerHTML='<div class="empty">'+__t('noStories','No stories in this category yet.')+'</div>';return}
     grid.innerHTML=list.map(function(i,k){
       return '<article class="card'+(k===0&&filter==='all'?' lead':'')+'" style="animation-delay:'+(k*40)+'ms">'+
-        '<div class="top"><span>'+esc(i.category)+' <span class="region">'+esc(i.region)+'</span></span><time datetime="'+esc(i.date)+'">'+fmt(i.date)+'</time></div>'+
+        '<div class="top"><span>'+esc(__m('newsCats',i.category))+' <span class="region">'+esc(__m('regions',i.region))+'</span></span><time datetime="'+esc(i.date)+'">'+fmt(i.date)+'</time></div>'+
         '<h3><a href="'+esc(i.url)+'" target="_blank" rel="noopener">'+esc(i.title)+'</a></h3>'+
         '<p>'+esc(i.summary)+'</p>'+
-        '<div class="src"><span>'+esc(i.source)+'</span><a href="'+esc(i.url)+'" target="_blank" rel="noopener">Read the report <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 17L17 7M9 7h8v8"/></svg></a></div>'+
+        '<div class="src"><span>'+esc(i.source)+'</span><a href="'+esc(i.url)+'" target="_blank" rel="noopener">'+__t('readReport','Read the report')+' <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 17L17 7M9 7h8v8"/></svg></a></div>'+
       '</article>'}).join('');
   }
-  fetch('news.json?v='+Date.now()).then(function(r){return r.json()}).then(function(d){
-    items=(d.items||[]).slice().sort(function(a,b){return a.date<b.date?1:-1});
+  Promise.all([fetch(ROOT+'news/news.json?v='+Date.now()).then(function(r){return r.json()}),__ov('news/news')]).then(function(a){var d=a[0],ov=a[1];
+    items=(d.items||[]).map(function(i){return Object.assign({},i,ov[i.url]||{})}).slice().sort(function(a,b){return a.date<b.date?1:-1});
     document.getElementById('updated').textContent=fmt(d.updated||items[0].date);
     render();
-  }).catch(function(){grid.innerHTML='<div class="empty">The news feed could not be loaded. Please try again shortly.</div>'});
+  }).catch(function(){grid.innerHTML='<div class="empty">'+__t('newsErr','The news feed could not be loaded. Please try again shortly.')+'</div>'});
   document.querySelectorAll('#filters button').forEach(function(b){b.addEventListener('click',function(){
     filter=b.dataset.f;document.querySelectorAll('#filters button').forEach(function(x){x.setAttribute('aria-pressed',x===b)});render();
   })});
@@ -153,5 +182,7 @@ footer nav{display:flex;gap:22px;flex-wrap:wrap;letter-spacing:.1em;text-transfo
   document.getElementById('yr').textContent=new Date().getFullYear();
 })();
 </script>
+<script>(function(){var l=document.getElementById('lang');if(!l)return;var b=l.querySelector('button');b.addEventListener('click',function(e){e.stopPropagation();var o=l.classList.toggle('open');b.setAttribute('aria-expanded',o)});document.addEventListener('click',function(){l.classList.remove('open');b.setAttribute('aria-expanded','false')});document.addEventListener('keydown',function(e){if(e.key==='Escape'){l.classList.remove('open');b.setAttribute('aria-expanded','false')}});
+document.querySelectorAll('[data-lang]').forEach(function(a){a.addEventListener('click',function(){try{localStorage.setItem('sw-lang',a.getAttribute('data-lang'))}catch(e){}})})})();</script>
 </body>
 </html>
